@@ -1,6 +1,6 @@
 {
+  "replace": false,
   "values": [
-    "testiummod:testiumr_block",
-    "testiummod:tainter_block"
+    "testiummod:testiumr_block"
   ]
 }

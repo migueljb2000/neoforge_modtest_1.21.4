@@ -55,17 +55,16 @@ public class ModItems {
             () -> new Item(new Item.Properties().setId(ITEMS.key("redium"))));
     */
     //CUSTOM ITEMS
-    /*
     public static final DeferredItem<Item> CHISEL = ITEMS.registerItem("chisel",
-                    Item::new,
+                    ChiselItem::new,
                     new Item.Properties()
                     .durability(192));
 
     public static final DeferredItem<Item> TESTER = ITEMS.registerItem("tester",
-                    Item::new,
+                    TesterItem::new,
                     new Item.Properties()
                     .durability(192));
-
+/*
     public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
             ()-> new ChiselItem(new Item.Properties()
                     .durability(192).setId(ITEMS.key("chisel"))));
