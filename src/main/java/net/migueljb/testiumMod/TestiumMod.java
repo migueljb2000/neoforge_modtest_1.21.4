@@ -1,5 +1,8 @@
 package net.migueljb.testiumMod;
 
+import net.migueljb.testiumMod.block.ModBlocks;
+import net.migueljb.testiumMod.item.ModCreativeModeTabs;
+import net.migueljb.testiumMod.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -55,6 +58,11 @@ public class TestiumMod
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+       // ModCreativeModeTabs.register((modEventBus));
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -65,7 +73,23 @@ public class TestiumMod
     private void commonSetup(final FMLCommonSetupEvent event){}
 
     // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {}
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+
+        if(event.getTabKey()== CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.TESTIUM.get());
+            event.accept(ModItems.TESTIUMG.get());
+            event.accept(ModItems.TESTIUMR.get());
+        }
+
+        if(event.getTabKey()== CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.TESTIUMR_BLOCK_ITEM.get());
+        }
+
+
+
+
+
+    }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
