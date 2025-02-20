@@ -9,9 +9,14 @@ import net.minecraft.world.item.component.Consumables;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 import net.minecraft.world.item.consume_effects.TeleportRandomlyConsumeEffect;
 
+import static net.minecraft.world.item.component.Consumables.defaultFood;
+
 public class ModFoodProperties {
 
-    public static final Consumable GREEN_BEEF_CONSUMABLE = Consumables.defaultFood()
+    public static final FoodProperties GREEN_BEEF = new FoodProperties.Builder().nutrition(3)
+            .saturationModifier(0.25f).build();
+
+    public static final Consumable GREEN_BEEF_CONSUMABLE = defaultFood()
             .soundAfterConsume(SoundEvents.GENERIC_EAT)
             .onConsume(
                     new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 600, 0), 0.3f))
@@ -19,10 +24,10 @@ public class ModFoodProperties {
                     new TeleportRandomlyConsumeEffect(10f))
             .build();
 
-    public static final FoodProperties GREEN_BEEF_FOOD = new FoodProperties.Builder().nutrition(3)
-            .saturationModifier(0.25f).build();
+    public static final FoodProperties RAW_GREEN_BEEF= new FoodProperties.Builder().nutrition(1)
+            .saturationModifier(0.15f).build();
 
-    public static final Consumable RAW_GREEN_BEEF_CONSUMABLE = Consumables.defaultFood()
+    public static final Consumable RAW_GREEN_BEEF_CONSUMABLE = defaultFood()
             .soundAfterConsume(SoundEvents.GENERIC_EAT)
             .onConsume(
                     new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.BLINDNESS, 100, 0), 0.3f))
@@ -32,6 +37,5 @@ public class ModFoodProperties {
                     new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HUNGER, 100, 0)))
             .build();
 
-    public static final FoodProperties RAW_GREEN_BEEF_FOOD = new FoodProperties.Builder().nutrition(1)
-            .saturationModifier(0.15f).build();
+
 }

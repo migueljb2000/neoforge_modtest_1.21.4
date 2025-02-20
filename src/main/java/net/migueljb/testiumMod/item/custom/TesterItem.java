@@ -49,10 +49,10 @@ public class TesterItem extends Item{
     @Override
     public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
         if(Screen.hasShiftDown()){
-            pTooltipComponents.add(Component.translatable("tooltip.migueljbmodtest.test_item"));
-            pTooltipComponents.add(Component.translatable("tooltip.migueljbmodtest.test_item.shift_down"));
+            pTooltipComponents.add(Component.translatable("tooltip.testiummod.test_item"));
+            pTooltipComponents.add(Component.translatable("tooltip.testiummod.test_item.shift_down"));
         }else{
-            pTooltipComponents.add(Component.translatable("tooltip.migueljbmodtest.test_item"));
+            pTooltipComponents.add(Component.translatable("tooltip.testiummod.test_item"));
         }
         super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
     }

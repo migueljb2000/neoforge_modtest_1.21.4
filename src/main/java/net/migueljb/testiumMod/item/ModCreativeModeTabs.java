@@ -29,8 +29,8 @@ public class ModCreativeModeTabs {
                             pOutput.accept((ModItems.TESTIUMG.get()));
                             pOutput.accept((ModItems.CHISEL).get());
                             pOutput.accept((ModItems.TESTER).get());
-                            //pOutput.accept((ModItems.GREEN_BEEF).get());
-                            //pOutput.accept((ModItems.RAW_GREEN_BEEF).get());
+                            pOutput.accept((ModItems.GREEN_BEEF).get());
+                            pOutput.accept((ModItems.RAW_GREEN_BEEF).get());
                             //pOutput.accept((ModItems.RED_COAL).get());
 
                         }
@@ -46,7 +46,7 @@ public class ModCreativeModeTabs {
                         @Override
                         public void accept(CreativeModeTab.ItemDisplayParameters pParameters, CreativeModeTab.Output pOutput) {
                             pOutput.accept((ModBlocks.TESTIUMR_BLOCK.get()));
-                            //pOutput.accept((ModBlocks.TAINTER_BLOCK.get()));
+                            pOutput.accept((ModBlocks.TAINTER_BLOCK.get()));
                         }
                     }).build());
 

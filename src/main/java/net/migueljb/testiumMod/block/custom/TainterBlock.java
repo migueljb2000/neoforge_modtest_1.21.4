@@ -29,7 +29,7 @@ public class TainterBlock extends Block {
     public void stepOn(Level pLevel, BlockPos pPos, BlockState pState, Entity pEntity) {
         if(pEntity instanceof ItemEntity itemEntity){
             if(isValidItem(itemEntity.getItem())){
-                pEntity.playSound(SoundEvents.BEACON_ACTIVATE, 1f, 1f);
+                pEntity.playSound(SoundEvents.ALLAY_DEATH, 1f, 1f);
             }
         }
         super.stepOn(pLevel, pPos, pState, pEntity);
@@ -43,16 +43,12 @@ public class TainterBlock extends Block {
     }
 
     private boolean isValidItem(ItemStack item){
-        boolean res = false;
-        if(item.is(ModTags.Items.GREEN_ITEMS) || item.is(ModTags.Items.RED_ITEMS)){
-            res = true;
-        };
-        return res;
+        return item.is(ModTags.Items.GREEN_ITEMS) || item.is(ModTags.Items.RED_ITEMS);
     }
 
     @Override
     public void appendHoverText(ItemStack pStack, Item.TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
-        pTooltipComponents.add(Component.translatable("tooltip.migueljbmodtest.tainter_block.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.testiummod.tainter_block.tooltip"));
         super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
     }
 

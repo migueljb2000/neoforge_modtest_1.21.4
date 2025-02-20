@@ -8,6 +8,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -86,18 +87,20 @@ public class ModItems {
             });
     */
     //FOOD ITEMS
-/*
-    public static final RegistryObject<Item> GREEN_BEEF = ITEMS.register("green_beef",
-            () -> new Item(new Item.Properties()
-                    .food(ModFoodProperties.GREEN_BEEF_FOOD, ModFoodProperties.GREEN_BEEF_CONSUMABLE)
+
+    public static final DeferredItem<Item> GREEN_BEEF = ITEMS.registerItem("green_beef",
+            Item::new,
+            new Item.Properties()
+                    .food(ModFoodProperties.GREEN_BEEF, ModFoodProperties.GREEN_BEEF_CONSUMABLE)
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation
-                            .fromNamespaceAndPath("migueljbmodtest", "green_beef")))));
-    public static final RegistryObject<Item> RAW_GREEN_BEEF = ITEMS.register("raw_green_beef",
-            () -> new Item(new Item.Properties()
-                    .food(ModFoodProperties.RAW_GREEN_BEEF_FOOD, ModFoodProperties.RAW_GREEN_BEEF_CONSUMABLE)
+                            .fromNamespaceAndPath("migueljbmodtest", "green_beef"))));
+    public static final DeferredItem<Item> RAW_GREEN_BEEF = ITEMS.registerItem("raw_green_beef",
+            Item::new,
+            new Item.Properties()
+                    .food(ModFoodProperties.RAW_GREEN_BEEF, ModFoodProperties.RAW_GREEN_BEEF_CONSUMABLE)
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation
-                            .fromNamespaceAndPath("migueljbmodtest", "raw_green_beef")))));
-*/
+                            .fromNamespaceAndPath("migueljbmodtest", "raw_green_beef"))));
+
     public static void  register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

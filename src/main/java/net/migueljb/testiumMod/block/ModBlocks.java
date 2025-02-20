@@ -50,14 +50,20 @@ public class ModBlocks {
             TESTIUMR_BLOCK,
             new Item.Properties()
     );
-    /*
-    public static final DeferredBlock<Block> TAINTER_BLOCK = BLOCKS.registerBlock("tainter_block",
-            TainterBlock::new,
+
+    public static final DeferredBlock<Block> TAINTER_BLOCK = BLOCKS.register("tainter_block",
+            registryName -> new TainterBlock(
             BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)
-            );
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName))
+            ));
+    public static final DeferredItem<BlockItem> TAINTER_BLOCK_ITEM = ITEMS.registerSimpleBlockItem(
+            "tainter_block",
+            TAINTER_BLOCK,
+            new Item.Properties()
+    );
 
-
+/*
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
