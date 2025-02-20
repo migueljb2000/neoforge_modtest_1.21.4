@@ -20,7 +20,7 @@ public class ModCreativeModeTabs {
     public static final Supplier<CreativeModeTab> TESTIUM_ITEMS_TAB = CREATIVE_MODE_TAB.register(
             "testium_items_tab", ()-> CreativeModeTab.builder().icon(
                             ()-> new ItemStack(ModItems.TESTIUM.get()))
-                    .title(Component.translatable("creativetab.migueljbmodtest.testium_items"))
+                    .title(Component.translatable("creativetab.testiummod.testium_items"))
                     .displayItems(new CreativeModeTab.DisplayItemsGenerator() {
                         @Override
                         public void accept(CreativeModeTab.ItemDisplayParameters pParameters, CreativeModeTab.Output pOutput) {
@@ -41,7 +41,7 @@ public class ModCreativeModeTabs {
             "testium_blocks_tab", ()-> CreativeModeTab.builder().icon(
                             ()-> new ItemStack(ModBlocks.TESTIUMR_BLOCK.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(TestiumMod.MOD_ID, "testium_items_tab"))
-                    .title(Component.translatable("creativetab.migueljbmodtest.testium_blocks"))
+                    .title(Component.translatable("creativetab.testiummod.testium_blocks"))
                     .displayItems(new CreativeModeTab.DisplayItemsGenerator() {
                         @Override
                         public void accept(CreativeModeTab.ItemDisplayParameters pParameters, CreativeModeTab.Output pOutput) {
