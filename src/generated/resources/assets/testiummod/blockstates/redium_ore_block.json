@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "testiummod:block/redium_ore_block"
+    }
+  }
+}

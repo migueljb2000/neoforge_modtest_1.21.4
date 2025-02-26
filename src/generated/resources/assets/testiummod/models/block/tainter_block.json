@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "testiummod:block/tainter_furnace_top",
+    "east": "testiummod:block/tainter_furnace_side",
+    "north": "testiummod:block/tainter_furnace_front",
+    "particle": "testiummod:block/tainter_furnace_side",
+    "south": "testiummod:block/tainter_furnace_side",
+    "up": "testiummod:block/tainter_furnace_top",
+    "west": "testiummod:block/tainter_furnace_side"
+  }
+}

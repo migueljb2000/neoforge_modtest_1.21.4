@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "testiummod:block/redium_ore_block"
+  }
+}

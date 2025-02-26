@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "testiummod:block/testiumr_block"
+    }
+  }
+}
