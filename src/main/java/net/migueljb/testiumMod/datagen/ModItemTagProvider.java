@@ -1,6 +1,7 @@
 package net.migueljb.testiumMod.datagen;
 
 import net.migueljb.testiumMod.TestiumMod;
+import net.migueljb.testiumMod.block.ModBlocks;
 import net.migueljb.testiumMod.item.ModItems;
 import net.migueljb.testiumMod.util.ModTags;
 import net.minecraft.core.HolderLookup;
@@ -49,7 +50,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ModTags.Items.RED_ITEMS)
                 .add(ModItems.RED_COAL.get())
                 .add(ModItems.REDIUM.get())
-                .add(ModItems.TESTIUMR.get());
+                .add(ModItems.TESTIUMR.get())
+                .add(Item.byBlock(ModBlocks.TESTIUMR_BLOCK.get()));
+
 
     }
 }
