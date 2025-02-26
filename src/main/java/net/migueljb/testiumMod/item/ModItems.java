@@ -34,14 +34,14 @@ public class ModItems {
     public static final DeferredItem<Item> TESTIUMR = ITEMS.registerItem("testiumr",
             Item::new,
             new Item.Properties());
-    /*
+
     public static final DeferredItem<Item> GREENIUM = ITEMS.registerItem("greenium",
             Item::new,
             new Item.Properties());
     public static final DeferredItem<Item> REDIUM = ITEMS.registerItem("redium",
             Item::new,
             new Item.Properties());
-    */
+
 
     /*
     public static final RegistryObject<Item> TESTIUM = ITEMS.register("testium",
@@ -76,16 +76,11 @@ public class ModItems {
     */
     //FUEL ITEMS
 
-    /*
-    public static final RegistryObject<Item> RED_COAL = ITEMS.register("red_coal",
-            ()-> new FuelItem(new Item.Properties().setId(ITEMS.key("red_coal")), 20000){
-                @Override
-                public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
-                    pTooltipComponents.add(Component.translatable("tooltip.migueljbmodtest.red_coal"));
-                    super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
-                }
-            });
-    */
+
+    public static final DeferredItem<Item> RED_COAL = ITEMS.registerItem("red_coal",
+            Item::new,
+            new Item.Properties());
+
     //FOOD ITEMS
 
     public static final DeferredItem<Item> GREEN_BEEF = ITEMS.registerItem("green_beef",

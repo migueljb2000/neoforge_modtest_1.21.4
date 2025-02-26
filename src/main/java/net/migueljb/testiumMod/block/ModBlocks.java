@@ -63,6 +63,27 @@ public class ModBlocks {
             new Item.Properties()
     );
 
+    public static final DeferredBlock<Block> GREENIUM_ORE_BLOCK = BLOCKS.register("greenium_ore_block",
+            registryName -> new Block(
+                    BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.GLASS)
+                            .setId(ResourceKey.create(Registries.BLOCK, registryName))));
+    public static final DeferredItem<BlockItem> GREENIUM_ORE_ITEM = ITEMS.registerSimpleBlockItem(
+            "greenium_ore_block",
+            GREENIUM_ORE_BLOCK,
+            new Item.Properties()
+    );
+
+    public static final DeferredBlock<Block> REDIUM_ORE_BLOCK = BLOCKS.register("redium_ore_block",
+            registryName -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.GLASS)
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName))));
+    public static final DeferredItem<BlockItem> REDIUM_ORE_ITEM = ITEMS.registerSimpleBlockItem(
+            "redium_ore_block",
+            REDIUM_ORE_BLOCK,
+            new Item.Properties()
+    );
+
 /*
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -10,6 +10,8 @@
   "item.testiummod.raw_green_beef": "Raw Green Beef",
   "item.testiummod.red_coal": "Red Coal",
   "tooltip.testiummod.red_coal": "Burns like lava",
+  "item.testiummod.greenium": "Greenium Shard",
+  "item.testiummod.redium": "Redium Shard",
 
   "block.testiummod.testiumr_block": "Red Testium Block",
   "block.testiummod.tainter_block": "Tainter Furnace",
