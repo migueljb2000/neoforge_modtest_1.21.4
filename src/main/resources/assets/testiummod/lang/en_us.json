@@ -21,6 +21,17 @@
   "tooltip.testiummod.test_item.shift_down" : "Rework pending",
   "tooltip.testiummod.test_item" :  "Throws ender pearls §9shift§r",
 
+  "block.testiummod.testiumr_stairs": "Testiumr Stairs",
+  "block.testiummod.testiumr_slab": "Testiumr Slab",
+  "block.testiummod.testiumr_pressure_plate": "Testiumr Pressure Plate",
+  "block.testiummod.testiumr_button": "Testiumr Button",
+  "block.testiummod.testiumr_fence": "Testiumr Fence",
+  "block.testiummod.testiumr_fence_gate": "Testiumr Fence Gate",
+  "block.testiummod.testiumr_wall": "Testiumr Wall",
+  "block.testiummod.testiumr_door": "Testiumr Door",
+  "block.testiummod.testiumr_trapdoor": "Testiumr Trapdoor",
+d
+
 
   "creativetab.testiummod.testium_items": "Testium Items",
   "creativetab.testiummod.testium_blocks": "Testium Blocks"

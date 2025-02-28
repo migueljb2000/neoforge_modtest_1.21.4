@@ -52,6 +52,17 @@ public class ModCreativeModeTabs {
                             pOutput.accept((ModBlocks.TAINTER_BLOCK.get()));
                             pOutput.accept((ModBlocks.GREENIUM_ORE_BLOCK.get()));
                             pOutput.accept((ModBlocks.REDIUM_ORE_BLOCK.get()));
+                            //Non Blocks
+                            pOutput.accept((ModBlocks.TESTIUMR_STAIRS.get()));
+                            pOutput.accept((ModBlocks.TESTIUMR_SLAB.get()));
+                            pOutput.accept((ModBlocks.TESTIUMR_PRESSURE_PLATE.get()));
+                            pOutput.accept((ModBlocks.TESTIUMR_BUTTON.get()));
+                            pOutput.accept((ModBlocks.TESTIUMR_FENCE.get()));
+                            pOutput.accept((ModBlocks.TESTIUMR_FENCE_GATE.get()));
+                            pOutput.accept((ModBlocks.TESTIUMR_WALL.get()));
+                            pOutput.accept((ModBlocks.TESTIUMR_DOOR.get()));
+                            pOutput.accept((ModBlocks.TESTIUMR_TRAPDOOR.get()));
+
                         }
                     }).build());
 
