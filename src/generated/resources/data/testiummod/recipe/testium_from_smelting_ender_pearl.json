@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 1000,
+  "experience": 0.45,
+  "group": "testium",
+  "ingredient": "minecraft:ender_pearl",
+  "result": {
+    "count": 1,
+    "id": "testiummod:testium"
+  }
+}

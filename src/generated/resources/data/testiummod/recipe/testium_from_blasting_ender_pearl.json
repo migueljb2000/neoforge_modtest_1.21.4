@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 500,
+  "experience": 0.65,
+  "group": "testium",
+  "ingredient": "minecraft:ender_pearl",
+  "result": {
+    "count": 1,
+    "id": "testiummod:testium"
+  }
+}

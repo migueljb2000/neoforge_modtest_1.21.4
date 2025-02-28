@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_green_beef": {
+      "conditions": {
+        "items": [
+          {
+            "items": "testiummod:raw_green_beef"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "testiummod:green_beef_from_smelting_raw_green_beef"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_green_beef"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "testiummod:green_beef_from_smelting_raw_green_beef"
+    ]
+  }
+}
