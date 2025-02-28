@@ -10,8 +10,8 @@ import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
-public class ModBlockModelProvider extends ModelProvider {
-    public ModBlockModelProvider(PackOutput output) {
+public class ModModelProvider extends ModelProvider {
+    public ModModelProvider(PackOutput output) {
         super(output, "testiummod");
     }
 

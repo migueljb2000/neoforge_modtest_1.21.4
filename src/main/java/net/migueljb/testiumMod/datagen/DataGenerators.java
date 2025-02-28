@@ -1,13 +1,10 @@
 package net.migueljb.testiumMod.datagen;
 
 import net.migueljb.testiumMod.TestiumMod;
-import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 import java.util.List;
@@ -29,8 +26,10 @@ public class DataGenerators {
                         LootContextParamSets.BLOCK // it makes sense to use BLOCK here
                 )), lookupProvider
                 ));
-        event.createProvider(ModBlockModelProvider::new);
+        event.createProvider(ModModelProvider::new);
         //event.createProvider(ModBlockTagProvider::new);
         event.createBlockAndItemTags(ModBlockTagProvider::new, ModItemTagProvider:: new);
+        event.createProvider(ModRecipeProvider.Runner::new);
+        event.createProvider(ModDataMapProvider::new);
     }
 }
