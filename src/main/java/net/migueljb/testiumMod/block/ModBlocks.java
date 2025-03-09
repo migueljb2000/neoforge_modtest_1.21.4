@@ -6,6 +6,7 @@ import net.migueljb.testiumMod.block.custom.TainterBlock;
 import net.migueljb.testiumMod.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -51,6 +52,7 @@ public class ModBlocks {
             new Item.Properties()
     );
 
+
     public static final DeferredBlock<Block> GREENIUM_ORE_BLOCK = BLOCKS.register("greenium_ore_block",
             registryName -> new Block(
                     BlockBehaviour.Properties.of()
@@ -72,17 +74,30 @@ public class ModBlocks {
             new Item.Properties()
     );
 
+    public static final DeferredBlock<WeightedPressurePlateBlock> TESTIUMR_PRESSURE_PLATE = BLOCKS.register("testiumr_pressure_plate",
+            registryName -> new WeightedPressurePlateBlock(10, BlockSetType.IRON,
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK, registryName))));
+    public static final DeferredItem<BlockItem> TESTIUMR_PRESSURE_PLATE_ITEM = ITEMS.registerSimpleBlockItem(
+            "testiumr_pressure_plate",
+            TESTIUMR_PRESSURE_PLATE,
+            new Item.Properties()
+    );
     //Non block Blocks
+/*
     public static final DeferredBlock<StairBlock> TESTIUMR_STAIRS = BLOCKS.register("testiumr_stairs",
-            registryName -> new StairBlock(ModBlocks.TESTIUMR_BLOCK.get().defaultBlockState(),
+           registryName -> new StairBlock(ModBlocks.TESTIUMR_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
-
+*//*
     public static final DeferredBlock<SlabBlock> TESTIUMR_SLAB = BLOCKS.register("testiumr_slab",
             registryName -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+    public static final DeferredItem<BlockItem> TESTIUMR_SLAB_ITEM = ITEMS.registerSimpleBlockItem(
+            "testiumr_slab",
+            TESTIUMR_SLAB,
+            new Item.Properties()
+    );
+public static final DeferredBlock<SlabBlock> TESTIUMR_SLAB = BLOCKS.register("testiumr_slab",
+            registryName -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 
-    public static final DeferredBlock<PressurePlateBlock> TESTIUMR_PRESSURE_PLATE = BLOCKS.register("testiumr_pressure_plate",
-            registryName -> new PressurePlateBlock(BlockSetType.IRON,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<ButtonBlock> TESTIUMR_BUTTON = BLOCKS.register("testiumr_button",
             registryName -> new ButtonBlock(BlockSetType.IRON, 20,
@@ -102,7 +117,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<TrapDoorBlock> TESTIUMR_TRAPDOOR = BLOCKS.register("testiumr_trapdoor",
             registryName -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
-
+*/
     public static  void register(IEventBus eventBus){
         BLOCKS.register(eventBus);
     }

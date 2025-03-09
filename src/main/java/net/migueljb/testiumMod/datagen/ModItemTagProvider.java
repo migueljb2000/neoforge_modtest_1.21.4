@@ -51,7 +51,12 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.RED_COAL.get())
                 .add(ModItems.REDIUM.get())
                 .add(ModItems.TESTIUMR.get())
-                .add(Item.byBlock(ModBlocks.TESTIUMR_BLOCK.get()));
+                .add(ModBlocks.TESTIUMR_PRESSURE_PLATE.get().asItem())
+                .add(ModBlocks.TESTIUMR_BLOCK.get().asItem());
+                //.add(Item.byBlock(ModBlocks.TESTIUMR_SLAB.get()));
+    //.add(Item.byBlock(ModBlocks.TESTIUMR_TRAPDOOR.get()));
+
+
 
 
     }

@@ -39,6 +39,19 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 this.createMultipleOreDrops(ModBlocks.GREENIUM_ORE_BLOCK.get(), ModItems.GREENIUM.get(), 4, 6));
         this.add(ModBlocks.REDIUM_ORE_BLOCK.get(),
                 this.createMultipleOreDrops(ModBlocks.REDIUM_ORE_BLOCK.get(), ModItems.REDIUM.get(), 1, 9));
+        //this.dropSelf(ModBlocks.TESTIUMR_STAIRS.get());
+        //this.add(ModBlocks.TESTIUMR_SLAB.get(),
+        //        this.createSlabItemTable(ModBlocks.TESTIUMR_SLAB.get()));
+
+        this.dropSelf(ModBlocks.TESTIUMR_PRESSURE_PLATE.get());
+        //this.dropSelf(ModBlocks.TESTIUMR_BUTTON.get());
+        //this.dropSelf(ModBlocks.TESTIUMR_FENCE.get());
+        //this.dropSelf(ModBlocks.TESTIUMR_FENCE_GATE.get());
+        //this.dropSelf(ModBlocks.TESTIUMR_WALL.get());
+        //this.dropSelf(ModBlocks.TESTIUMR_TRAPDOOR.get());
+
+        //this.add(ModBlocks.TESTIUMR_DOOR.get(),
+        //        this.createDoorTable(ModBlocks.TESTIUMR_DOOR.get()));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
