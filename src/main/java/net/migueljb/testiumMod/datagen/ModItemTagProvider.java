@@ -46,7 +46,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.GREEN_BEEF.get())
                 .add(ModItems.GREENIUM.get())
                 .add(ModItems.RAW_GREEN_BEEF.get())
-                .add(ModItems.TESTIUMG.get());
+                .add(ModItems.TESTIUMG.get())
+                .add(ModBlocks.TESTIUMG_PRESSURE_PLATE.get().asItem())
+                .add(ModBlocks.TESTIUMG_BLOCK.get().asItem());
         tag(ModTags.Items.RED_ITEMS)
                 .add(ModItems.RED_COAL.get())
                 .add(ModItems.REDIUM.get())

@@ -40,10 +40,12 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createTrivialCube(ModBlocks.GREENIUM_ORE_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.REDIUM_ORE_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.TESTIUMR_BLOCK.get());
+        blockModels.createTrivialCube(ModBlocks.TESTIUMG_BLOCK.get());
         //blockModels.createTrivialCube(ModBlocks.TESTIUMR_STAIRS.get());
         System.out.println(ResourceLocation.fromNamespaceAndPath("minecraft", "oak_stairs"));
         //blockModels.createWeightedPressurePlate(ModBlocks.TESTIUMR_PRESSURE_PLATE.get(), ModBlocks.TESTIUMR_BLOCK.get());
         blockModels.createWeightedPressurePlate(ModBlocks.TESTIUMR_PRESSURE_PLATE.get(), ModBlocks.TESTIUMR_BLOCK.get());
+        blockModels.createWeightedPressurePlate(ModBlocks.TESTIUMG_PRESSURE_PLATE.get(), ModBlocks.TESTIUMG_BLOCK.get());
         /*
         blockModels.createSlab(ModBlocks.TESTIUMR_SLAB.get(),
                 ModelTemplates.SLAB_BOTTOM.getDefaultModelLocation(ModBlocks.TESTIUMR_BLOCK.get()),

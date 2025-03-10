@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "testiummod:testiumg"
+  },
+  "pattern": [
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "testiummod:testiumg_block"
+  }
+}

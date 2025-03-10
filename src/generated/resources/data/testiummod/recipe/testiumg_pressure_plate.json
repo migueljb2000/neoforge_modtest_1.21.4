@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "A": "testiummod:testiumg"
+  },
+  "pattern": [
+    "AA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "testiummod:testiumg_pressure_plate"
+  }
+}

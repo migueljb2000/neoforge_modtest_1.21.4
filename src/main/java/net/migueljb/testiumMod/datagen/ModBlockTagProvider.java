@@ -22,7 +22,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             .add(ModBlocks.REDIUM_ORE_BLOCK.get())
             .add(ModBlocks.TAINTER_BLOCK.get())
             .add(ModBlocks.TESTIUMR_PRESSURE_PLATE.get())
-            .add(ModBlocks.TESTIUMR_BLOCK.get());
+            .add(ModBlocks.TESTIUMG_PRESSURE_PLATE.get())
+            .add(ModBlocks.TESTIUMR_BLOCK.get())
+            .add(ModBlocks.TESTIUMG_BLOCK.get());
             //.add(ModBlocks.TESTIUMR_SLAB.get());
             //.add(ModBlocks.TESTIUMR_BUTTON.get());
 

@@ -14,6 +14,7 @@
   "item.testiummod.redium": "Redium Shard",
 
   "block.testiummod.testiumr_block": "Red Testium Block",
+  "block.testiummod.testiumg_block": "Green Testium Block",
   "block.testiummod.redium_ore_block": "Redium Ore Block",
   "block.testiummod.greenium_ore_block": "Greenium Ore Block",
   "block.testiummod.tainter_block": "Tainter Furnace",
@@ -23,7 +24,8 @@
 
   "block.testiummod.testiumr_stairs": "Testiumr Stairs",
   "block.testiummod.testiumr_slab": "Testiumr Slab",
-  "block.testiummod.testiumr_pressure_plate": "Testiumr Pressure Plate",
+  "block.testiummod.testiumr_pressure_plate": "Red Testium Pressure Plate",
+  "block.testiummod.testiumg_pressure_plate": "Green Testium Pressure Plate",
   "block.testiummod.testiumr_button": "Testiumr Button",
   "block.testiummod.testiumr_fence": "Testiumr Fence",
   "block.testiummod.testiumr_fence_gate": "Testiumr Fence Gate",

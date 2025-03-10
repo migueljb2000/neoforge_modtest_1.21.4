@@ -40,6 +40,18 @@ public class ModBlocks {
             new Item.Properties()
     );
 
+    public static final DeferredBlock<Block> TESTIUMG_BLOCK = BLOCKS.register("testiumg_block",
+            registryName -> new Block(
+                    BlockBehaviour.Properties.of()
+                            .strength(4f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)
+                            .setId(ResourceKey.create(Registries.BLOCK, registryName))
+            ));
+    public static final DeferredItem<BlockItem> TESTIUMG_BLOCK_ITEM = ITEMS.registerSimpleBlockItem(
+            "testiumg_block",
+            TESTIUMG_BLOCK,
+            new Item.Properties()
+    );
+
     public static final DeferredBlock<Block> TAINTER_BLOCK = BLOCKS.register("tainter_block",
             registryName -> new TainterBlock(
             BlockBehaviour.Properties.of()
@@ -73,7 +85,8 @@ public class ModBlocks {
             REDIUM_ORE_BLOCK,
             new Item.Properties()
     );
-
+    //NON BLOCKS BLOCKS
+    //Pressure Plates
     public static final DeferredBlock<WeightedPressurePlateBlock> TESTIUMR_PRESSURE_PLATE = BLOCKS.register("testiumr_pressure_plate",
             registryName -> new WeightedPressurePlateBlock(10, BlockSetType.IRON,
                     BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK, registryName))));
@@ -82,6 +95,16 @@ public class ModBlocks {
             TESTIUMR_PRESSURE_PLATE,
             new Item.Properties()
     );
+
+    public static final DeferredBlock<WeightedPressurePlateBlock> TESTIUMG_PRESSURE_PLATE = BLOCKS.register("testiumg_pressure_plate",
+            registryName -> new WeightedPressurePlateBlock(15, BlockSetType.GOLD,
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK, registryName))));
+    public static final DeferredItem<BlockItem> TESTIUMG_PRESSURE_PLATE_ITEM = ITEMS.registerSimpleBlockItem(
+            "testiumg_pressure_plate",
+            TESTIUMG_PRESSURE_PLATE,
+            new Item.Properties()
+    );
+
     //Non block Blocks
 /*
     public static final DeferredBlock<StairBlock> TESTIUMR_STAIRS = BLOCKS.register("testiumr_stairs",

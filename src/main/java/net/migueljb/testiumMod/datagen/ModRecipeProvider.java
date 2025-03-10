@@ -52,11 +52,27 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_testiumg", has(ModItems.TESTIUMG))
                 .save(this.output);
 
+        //TESTIUM RED BLOCK
         ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.MISC, ModBlocks.TESTIUMR_BLOCK.get())
                 .pattern("AA")
                 .pattern("AA")
                 .define('A', ModItems.TESTIUMR.get())
                 .unlockedBy("has_testiumr", has(ModBlocks.TESTIUMR_BLOCK)).save(this.output);
+        //TESTIUM GREEN BLOCK
+        ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.MISC, ModBlocks.TESTIUMG_BLOCK.get())
+                .pattern("AA")
+                .pattern("AA")
+                .define('A', ModItems.TESTIUMG.get())
+                .unlockedBy("has_testiumr", has(ModBlocks.TESTIUMG_BLOCK)).save(this.output);
+        //PRESSURE PLATES
+        ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.REDSTONE, ModBlocks.TESTIUMR_PRESSURE_PLATE.get())
+                .pattern("AA")
+                .define('A', ModItems.TESTIUMR.get())
+                .unlockedBy("has_testiumr", has(ModBlocks.TESTIUMR_PRESSURE_PLATE)).save(this.output);
+        ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.REDSTONE, ModBlocks.TESTIUMG_PRESSURE_PLATE.get())
+                .pattern("AA")
+                .define('A', ModItems.TESTIUMG.get())
+                .unlockedBy("has_testiumg", has(ModBlocks.TESTIUMG_PRESSURE_PLATE)).save(this.output);
 
         oreSmelting2(TESTIUMSMELTABLES, RecipeCategory.MISC, ModItems.TESTIUM.get(), 0.45f, 1000, "testium");
         oreBlasting2(TESTIUMSMELTABLES, RecipeCategory.MISC, ModItems.TESTIUM.get(), 0.65f, 500, "testium");

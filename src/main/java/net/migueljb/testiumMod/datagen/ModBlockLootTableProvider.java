@@ -29,6 +29,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.TAINTER_BLOCK.get());
         this.dropSelf(ModBlocks.TESTIUMR_BLOCK.get());
+        this.dropSelf(ModBlocks.TESTIUMG_BLOCK.get());
         /*
         this.add(ModBlocks.GREENIUM_ORE_BLOCK.get(),
                 this.createOreDrop(ModBlocks.GREENIUM_ORE_BLOCK.get(),ModItems.GREENIUM.get()));
@@ -44,6 +45,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         //        this.createSlabItemTable(ModBlocks.TESTIUMR_SLAB.get()));
 
         this.dropSelf(ModBlocks.TESTIUMR_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.TESTIUMG_PRESSURE_PLATE.get());
         //this.dropSelf(ModBlocks.TESTIUMR_BUTTON.get());
         //this.dropSelf(ModBlocks.TESTIUMR_FENCE.get());
         //this.dropSelf(ModBlocks.TESTIUMR_FENCE_GATE.get());

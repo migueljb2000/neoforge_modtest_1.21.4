@@ -1,6 +1,8 @@
-// 1.21.4	2025-03-09T22:17:18.5993747	Loot Tables
+// 1.21.4	2025-03-10T11:07:25.783677	Loot Tables
 e3b78630f8031acca4e7a910e8059aafc8695213 data/testiummod/loot_table/blocks/greenium_ore_block.json
 9c75d9940061b2bc5712178bc477290e14b90eec data/testiummod/loot_table/blocks/redium_ore_block.json
 4dbad047ff5ba7cb60c64cda53f20d85d2849cde data/testiummod/loot_table/blocks/tainter_block.json
+11169bcb6cb104b59c4323ac396a0e3dfcbd4f56 data/testiummod/loot_table/blocks/testiumg_block.json
+9bde24a80a7efe70c5ec8b5934eb600a02df61ca data/testiummod/loot_table/blocks/testiumg_pressure_plate.json
 dbc5071945a51e23e4e4804cda6021ade1c919c3 data/testiummod/loot_table/blocks/testiumr_block.json
 6dcb1e966efebebba468bdd257d6535a6f01778d data/testiummod/loot_table/blocks/testiumr_pressure_plate.json
