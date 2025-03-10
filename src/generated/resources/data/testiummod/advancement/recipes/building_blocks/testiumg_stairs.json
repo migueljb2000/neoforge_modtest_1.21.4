@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "testiummod:testiumg_button"
+        "recipe": "testiummod:testiumg_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "testiummod:testiumg_button"
+      "testiummod:testiumg_stairs"
     ]
   }
 }

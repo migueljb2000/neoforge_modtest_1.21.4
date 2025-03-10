@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "redstone",
   "ingredients": [
-    "testiummod:testiumg"
+    "testiummod:testiumg_block"
   ],
   "result": {
     "count": 1,

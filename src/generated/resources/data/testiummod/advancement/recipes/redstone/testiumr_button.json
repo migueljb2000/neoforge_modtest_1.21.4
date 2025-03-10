@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_testiumr": {
+    "has_testiumr_block": {
       "conditions": {
         "items": [
           {
-            "items": "testiummod:testiumr"
+            "items": "testiummod:testiumr_block"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_testiumr"
+      "has_testiumr_block"
     ]
   ],
   "rewards": {

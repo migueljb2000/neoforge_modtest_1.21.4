@@ -1,14 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "redstone",
+  "category": "building",
   "key": {
     "A": "testiummod:testiumg_block"
   },
   "pattern": [
-    "AA"
+    "A  ",
+    "AA ",
+    "AAA"
   ],
   "result": {
     "count": 1,
-    "id": "testiummod:testiumg_pressure_plate"
+    "id": "testiummod:testiumg_stairs"
   }
 }

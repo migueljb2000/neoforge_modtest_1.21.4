@@ -123,7 +123,23 @@ public class ModBlocks {
             TESTIUMG_BUTTON,
             new Item.Properties()
     );
-
+    //Stairs
+    public static final DeferredBlock<StairBlock> TESTIUMR_STAIRS = BLOCKS.register("testiumr_stairs",
+            registryName -> new StairBlock(ModBlocks.TESTIUMR_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK, registryName))));
+    public static final DeferredItem<BlockItem> TESTIUMR_STAIRS_ITEM = ITEMS.registerSimpleBlockItem(
+            "testiumr_stairs",
+            TESTIUMR_STAIRS,
+            new Item.Properties()
+    );
+    public static final DeferredBlock<StairBlock> TESTIUMG_STAIRS = BLOCKS.register("testiumg_stairs",
+            registryName -> new StairBlock(ModBlocks.TESTIUMG_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK, registryName))));
+    public static final DeferredItem<BlockItem> TESTIUMG_STAIRS_ITEM = ITEMS.registerSimpleBlockItem(
+            "testiumg_stairs",
+            TESTIUMG_STAIRS,
+            new Item.Properties()
+    );
     //Non block Blocks
 /*
     public static final DeferredBlock<StairBlock> TESTIUMR_STAIRS = BLOCKS.register("testiumr_stairs",

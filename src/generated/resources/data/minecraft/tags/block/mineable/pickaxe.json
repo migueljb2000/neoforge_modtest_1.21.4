@@ -8,6 +8,8 @@
     "testiummod:testiumr_button",
     "testiummod:testiumg_button",
     "testiummod:testiumr_block",
-    "testiummod:testiumg_block"
+    "testiummod:testiumg_block",
+    "testiummod:testiumr_stairs",
+    "testiummod:testiumg_stairs"
   ]
 }

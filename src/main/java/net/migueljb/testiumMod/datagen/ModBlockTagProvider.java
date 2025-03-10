@@ -26,7 +26,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             .add(ModBlocks.TESTIUMR_BUTTON.get())
             .add(ModBlocks.TESTIUMG_BUTTON.get())
             .add(ModBlocks.TESTIUMR_BLOCK.get())
-            .add(ModBlocks.TESTIUMG_BLOCK.get());
+            .add(ModBlocks.TESTIUMG_BLOCK.get())
+            .add(ModBlocks.TESTIUMR_STAIRS.get())
+            .add(ModBlocks.TESTIUMG_STAIRS.get());
             //.add(ModBlocks.TESTIUMR_SLAB.get());
 
 

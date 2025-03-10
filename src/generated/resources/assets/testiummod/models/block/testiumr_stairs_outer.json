@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "testiummod:block/testiumr_block",
+    "side": "testiummod:block/testiumr_block",
+    "top": "testiummod:block/testiumr_block"
+  }
+}

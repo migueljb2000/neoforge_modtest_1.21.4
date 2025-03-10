@@ -62,6 +62,9 @@ public class ModCreativeModeTabs {
                             //Buttons
                             pOutput.accept((ModBlocks.TESTIUMR_BUTTON.get()));
                             pOutput.accept((ModBlocks.TESTIUMG_BUTTON.get()));
+                            //Stairs
+                            pOutput.accept((ModBlocks.TESTIUMR_STAIRS.get()));
+                            pOutput.accept((ModBlocks.TESTIUMG_STAIRS.get()));
                             //pOutput.accept((ModBlocks.TESTIUMR_FENCE.get()));
                             //pOutput.accept((ModBlocks.TESTIUMR_FENCE_GATE.get()));
                             //pOutput.accept((ModBlocks.TESTIUMR_WALL.get()));

@@ -40,7 +40,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 this.createMultipleOreDrops(ModBlocks.GREENIUM_ORE_BLOCK.get(), ModItems.GREENIUM.get(), 4, 6));
         this.add(ModBlocks.REDIUM_ORE_BLOCK.get(),
                 this.createMultipleOreDrops(ModBlocks.REDIUM_ORE_BLOCK.get(), ModItems.REDIUM.get(), 1, 9));
-        //this.dropSelf(ModBlocks.TESTIUMR_STAIRS.get());
+        this.dropSelf(ModBlocks.TESTIUMR_STAIRS.get());
+        this.dropSelf(ModBlocks.TESTIUMG_STAIRS.get());
         //this.add(ModBlocks.TESTIUMR_SLAB.get(),
         //        this.createSlabItemTable(ModBlocks.TESTIUMR_SLAB.get()));
 

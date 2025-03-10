@@ -48,6 +48,8 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createWeightedPressurePlate(ModBlocks.TESTIUMG_PRESSURE_PLATE.get(), ModBlocks.TESTIUMG_BLOCK.get());
         blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMR_BLOCK.get()).button(ModBlocks.TESTIUMR_BUTTON.get());
         blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMG_BLOCK.get()).button(ModBlocks.TESTIUMG_BUTTON.get());
+        blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMR_BLOCK.get()).stairs(ModBlocks.TESTIUMR_STAIRS.get());
+        blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMG_BLOCK.get()).stairs(ModBlocks.TESTIUMG_STAIRS.get());
         /*
         blockModels.createSlab(ModBlocks.TESTIUMR_SLAB.get(),
                 ModelTemplates.SLAB_BOTTOM.getDefaultModelLocation(ModBlocks.TESTIUMR_BLOCK.get()),

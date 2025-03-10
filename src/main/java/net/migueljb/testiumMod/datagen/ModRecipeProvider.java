@@ -53,14 +53,26 @@ public class ModRecipeProvider extends RecipeProvider {
                 .save(this.output);
         //BUTTONS
         ShapelessRecipeBuilder.shapeless(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.REDSTONE, ModBlocks.TESTIUMR_BUTTON.get(), 1)
-                .requires(ModItems.TESTIUMR)
-                .unlockedBy("has_testiumr", has(ModItems.TESTIUMR))
+                .requires(ModBlocks.TESTIUMR_BLOCK.get())
+                .unlockedBy("has_testiumr_block", has(ModBlocks.TESTIUMR_BLOCK))
                 .save(this.output);
         ShapelessRecipeBuilder.shapeless(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.REDSTONE, ModBlocks.TESTIUMG_BUTTON.get(), 1)
-                .requires(ModItems.TESTIUMG)
-                .unlockedBy("has_testiumg", has(ModItems.TESTIUMG))
+                .requires(ModBlocks.TESTIUMG_BLOCK.get())
+                .unlockedBy("has_testiumg_block", has(ModBlocks.TESTIUMG_BLOCK))
                 .save(this.output);
-
+        //STAIRS
+        ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.BUILDING_BLOCKS, ModBlocks.TESTIUMR_STAIRS.get())
+                .pattern("A  ")
+                .pattern("AA ")
+                .pattern("AAA")
+                .define('A', ModBlocks.TESTIUMR_BLOCK.get())
+                .unlockedBy("has_testiumr_block", has(ModBlocks.TESTIUMR_BLOCK)).save(this.output);
+        ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.BUILDING_BLOCKS, ModBlocks.TESTIUMG_STAIRS.get())
+                .pattern("A  ")
+                .pattern("AA ")
+                .pattern("AAA")
+                .define('A', ModBlocks.TESTIUMG_BLOCK.get())
+                .unlockedBy("has_testiumg_block", has(ModBlocks.TESTIUMG_BLOCK)).save(this.output);
         //TESTIUM RED BLOCK
         ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.MISC, ModBlocks.TESTIUMR_BLOCK.get())
                 .pattern("AA")
@@ -76,11 +88,11 @@ public class ModRecipeProvider extends RecipeProvider {
         //PRESSURE PLATES
         ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.REDSTONE, ModBlocks.TESTIUMR_PRESSURE_PLATE.get())
                 .pattern("AA")
-                .define('A', ModItems.TESTIUMR.get())
+                .define('A', ModBlocks.TESTIUMR_BLOCK.get())
                 .unlockedBy("has_testiumr", has(ModBlocks.TESTIUMR_PRESSURE_PLATE)).save(this.output);
         ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.REDSTONE, ModBlocks.TESTIUMG_PRESSURE_PLATE.get())
                 .pattern("AA")
-                .define('A', ModItems.TESTIUMG.get())
+                .define('A', ModBlocks.TESTIUMG_BLOCK.get())
                 .unlockedBy("has_testiumg", has(ModBlocks.TESTIUMG_PRESSURE_PLATE)).save(this.output);
 
         oreSmelting2(TESTIUMSMELTABLES, RecipeCategory.MISC, ModItems.TESTIUM.get(), 0.45f, 1000, "testium");
