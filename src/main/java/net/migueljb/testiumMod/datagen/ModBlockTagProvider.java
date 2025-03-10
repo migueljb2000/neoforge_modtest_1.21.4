@@ -23,10 +23,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             .add(ModBlocks.TAINTER_BLOCK.get())
             .add(ModBlocks.TESTIUMR_PRESSURE_PLATE.get())
             .add(ModBlocks.TESTIUMG_PRESSURE_PLATE.get())
+            .add(ModBlocks.TESTIUMR_BUTTON.get())
+            .add(ModBlocks.TESTIUMG_BUTTON.get())
             .add(ModBlocks.TESTIUMR_BLOCK.get())
             .add(ModBlocks.TESTIUMG_BLOCK.get());
             //.add(ModBlocks.TESTIUMR_SLAB.get());
-            //.add(ModBlocks.TESTIUMR_BUTTON.get());
+
 
             //.add(ModBlocks.TESTIUMR_TRAPDOOR.get());
     this.tag(BlockTags.NEEDS_IRON_TOOL)

@@ -51,6 +51,15 @@ public class ModRecipeProvider extends RecipeProvider {
                 .requires(ModItems.TESTIUMG)
                 .unlockedBy("has_testiumg", has(ModItems.TESTIUMG))
                 .save(this.output);
+        //BUTTONS
+        ShapelessRecipeBuilder.shapeless(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.REDSTONE, ModBlocks.TESTIUMR_BUTTON.get(), 1)
+                .requires(ModItems.TESTIUMR)
+                .unlockedBy("has_testiumr", has(ModItems.TESTIUMR))
+                .save(this.output);
+        ShapelessRecipeBuilder.shapeless(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.REDSTONE, ModBlocks.TESTIUMG_BUTTON.get(), 1)
+                .requires(ModItems.TESTIUMG)
+                .unlockedBy("has_testiumg", has(ModItems.TESTIUMG))
+                .save(this.output);
 
         //TESTIUM RED BLOCK
         ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.MISC, ModBlocks.TESTIUMR_BLOCK.get())

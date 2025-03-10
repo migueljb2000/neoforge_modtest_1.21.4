@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_testiumg": {
+      "conditions": {
+        "items": [
+          {
+            "items": "testiummod:testiumg"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "testiummod:testiumg_button"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_testiumg"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "testiummod:testiumg_button"
+    ]
+  }
+}

@@ -48,12 +48,14 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.RAW_GREEN_BEEF.get())
                 .add(ModItems.TESTIUMG.get())
                 .add(ModBlocks.TESTIUMG_PRESSURE_PLATE.get().asItem())
+                .add(ModBlocks.TESTIUMG_BUTTON.get().asItem())
                 .add(ModBlocks.TESTIUMG_BLOCK.get().asItem());
         tag(ModTags.Items.RED_ITEMS)
                 .add(ModItems.RED_COAL.get())
                 .add(ModItems.REDIUM.get())
                 .add(ModItems.TESTIUMR.get())
                 .add(ModBlocks.TESTIUMR_PRESSURE_PLATE.get().asItem())
+                .add(ModBlocks.TESTIUMR_BUTTON.get().asItem())
                 .add(ModBlocks.TESTIUMR_BLOCK.get().asItem());
                 //.add(Item.byBlock(ModBlocks.TESTIUMR_SLAB.get()));
     //.add(Item.byBlock(ModBlocks.TESTIUMR_TRAPDOOR.get()));

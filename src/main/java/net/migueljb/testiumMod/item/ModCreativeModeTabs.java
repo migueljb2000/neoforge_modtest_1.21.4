@@ -59,7 +59,9 @@ public class ModCreativeModeTabs {
                             //Pressure Plates
                             pOutput.accept((ModBlocks.TESTIUMR_PRESSURE_PLATE.get()));
                             pOutput.accept((ModBlocks.TESTIUMG_PRESSURE_PLATE.get()));
-                            //pOutput.accept((ModBlocks.TESTIUMR_BUTTON.get()));
+                            //Buttons
+                            pOutput.accept((ModBlocks.TESTIUMR_BUTTON.get()));
+                            pOutput.accept((ModBlocks.TESTIUMG_BUTTON.get()));
                             //pOutput.accept((ModBlocks.TESTIUMR_FENCE.get()));
                             //pOutput.accept((ModBlocks.TESTIUMR_FENCE_GATE.get()));
                             //pOutput.accept((ModBlocks.TESTIUMR_WALL.get()));

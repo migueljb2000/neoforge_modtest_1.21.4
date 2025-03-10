@@ -46,7 +46,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.TESTIUMR_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.TESTIUMG_PRESSURE_PLATE.get());
-        //this.dropSelf(ModBlocks.TESTIUMR_BUTTON.get());
+        this.dropSelf(ModBlocks.TESTIUMR_BUTTON.get());
+        this.dropSelf(ModBlocks.TESTIUMG_BUTTON.get());
         //this.dropSelf(ModBlocks.TESTIUMR_FENCE.get());
         //this.dropSelf(ModBlocks.TESTIUMR_FENCE_GATE.get());
         //this.dropSelf(ModBlocks.TESTIUMR_WALL.get());

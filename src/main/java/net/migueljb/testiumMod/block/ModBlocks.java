@@ -104,6 +104,25 @@ public class ModBlocks {
             TESTIUMG_PRESSURE_PLATE,
             new Item.Properties()
     );
+    //Buttons
+    public static final DeferredBlock<ButtonBlock> TESTIUMR_BUTTON = BLOCKS.register("testiumr_button",
+            registryName -> new ButtonBlock(BlockSetType.IRON, 10,
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK, registryName))));
+
+    public static final DeferredItem<BlockItem> TESTIUMR_BUTTON_ITEM = ITEMS.registerSimpleBlockItem(
+            "testiumr_button",
+            TESTIUMR_BUTTON,
+            new Item.Properties()
+    );
+    public static final DeferredBlock<ButtonBlock> TESTIUMG_BUTTON = BLOCKS.register("testiumg_button",
+            registryName -> new ButtonBlock(BlockSetType.GOLD, 15,
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().setId(ResourceKey.create(Registries.BLOCK, registryName))));
+
+    public static final DeferredItem<BlockItem> TESTIUMG_BUTTON_ITEM = ITEMS.registerSimpleBlockItem(
+            "testiumg_button",
+            TESTIUMG_BUTTON,
+            new Item.Properties()
+    );
 
     //Non block Blocks
 /*
