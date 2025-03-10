@@ -39,10 +39,15 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             .add(ModBlocks.REDIUM_ORE_BLOCK.get())
             .add(ModBlocks.TESTIUMR_SLAB.get())
             .add(ModBlocks.TESTIUMG_SLAB.get());
-    /*
+
     this.tag(BlockTags.FENCES)
-            .add(ModBlocks.TESTIUMR_FENCE_GATE.get())
+            .add(ModBlocks.TESTIUMG_FENCE.get())
             .add(ModBlocks.TESTIUMR_FENCE.get());
+
+    this.tag(BlockTags.FENCE_GATES)
+            .add(ModBlocks.TESTIUMR_FENCE_GATE.get())
+            .add(ModBlocks.TESTIUMG_FENCE_GATE.get());
+    /*
     this.tag(BlockTags.WALLS)
             .add(ModBlocks.TESTIUMR_WALL.get());
     */}

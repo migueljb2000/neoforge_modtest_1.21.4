@@ -1,3 +1,5 @@
-// 1.21.4	2025-03-10T12:01:43.1210521	Tags for minecraft:block mod id testiummod
+// 1.21.4	2025-03-10T13:15:19.8347275	Tags for minecraft:block mod id testiummod
+598626df1d8eb2c0bc98244180f67e9661aa4c60 data/minecraft/tags/block/fences.json
+a4a247c07aecbc652e359d5aadcbf2db88acffdf data/minecraft/tags/block/fence_gates.json
 ddadfe460b22810f2c8bf93426b806a9143f0f1b data/minecraft/tags/block/mineable/pickaxe.json
 27bbf51a8e80265b16201f694d48bf934d4bad9a data/minecraft/tags/block/needs_iron_tool.json

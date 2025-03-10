@@ -51,6 +51,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModBlocks.TESTIUMG_BUTTON.get().asItem())
                 .add(ModBlocks.TESTIUMG_STAIRS.get().asItem())
                 .add(ModBlocks.TESTIUMG_BLOCK.get().asItem())
+                .add(ModBlocks.TESTIUMR_FENCE.get().asItem())
+                .add(ModBlocks.TESTIUMR_FENCE_GATE.get().asItem())
                 .add(Item.byBlock(ModBlocks.TESTIUMG_SLAB.get()));
         tag(ModTags.Items.RED_ITEMS)
                 .add(ModItems.RED_COAL.get())
@@ -60,6 +62,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModBlocks.TESTIUMR_BUTTON.get().asItem())
                 .add(ModBlocks.TESTIUMR_STAIRS.get().asItem())
                 .add(ModBlocks.TESTIUMR_BLOCK.get().asItem())
+                .add(ModBlocks.TESTIUMG_FENCE.get().asItem())
+                .add(ModBlocks.TESTIUMG_FENCE_GATE.get().asItem())
                 .add(Item.byBlock(ModBlocks.TESTIUMR_SLAB.get()));
     //.add(Item.byBlock(ModBlocks.TESTIUMR_TRAPDOOR.get()));
 

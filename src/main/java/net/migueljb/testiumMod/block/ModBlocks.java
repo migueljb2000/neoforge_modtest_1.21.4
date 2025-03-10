@@ -7,6 +7,8 @@ import net.migueljb.testiumMod.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -142,22 +144,39 @@ public class ModBlocks {
             "testiumg_slab",
             TESTIUMG_SLAB,
             new Item.Properties());
-    //Non block Blocks
+    //Fences
+    public static final DeferredBlock<FenceBlock> TESTIUMR_FENCE = BLOCKS.register("testiumr_fence",
+            registryName -> new FenceBlock(
+                    BlockBehaviour.Properties.of().strength(2f).setId(ResourceKey.create(Registries.BLOCK, registryName))));
+    public static final DeferredItem<BlockItem> TESTIUMR_FENCE_ITEM = ITEMS.registerSimpleBlockItem(
+            "testiumr_fence",
+            TESTIUMR_FENCE,
+            new Item.Properties());
+    public static final DeferredBlock<FenceBlock> TESTIUMG_FENCE = BLOCKS.register("testiumg_fence",
+            registryName -> new FenceBlock(
+                    BlockBehaviour.Properties.of().strength(2f).setId(ResourceKey.create(Registries.BLOCK, registryName))));
+    public static final DeferredItem<BlockItem> TESTIUMG_FENCE_ITEM = ITEMS.registerSimpleBlockItem(
+            "testiumg_fence",
+            TESTIUMG_FENCE,
+            new Item.Properties());
+    //Fence Gates
+    public static final DeferredBlock<FenceGateBlock> TESTIUMR_FENCE_GATE = BLOCKS.register("testiumr_fence_gate",
+            registryName -> new FenceGateBlock(
+                    BlockBehaviour.Properties.of().strength(2f).setId(ResourceKey.create(Registries.BLOCK, registryName)),
+            SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    public static final DeferredItem<BlockItem> TESTIUMR_FENCE_GATE_ITEM = ITEMS.registerSimpleBlockItem(
+            "testiumr_fence_gate",
+            TESTIUMR_FENCE_GATE,
+            new Item.Properties());
+    public static final DeferredBlock<FenceGateBlock> TESTIUMG_FENCE_GATE = BLOCKS.register("testiumg_fence_gate",
+            registryName -> new FenceGateBlock(
+                    BlockBehaviour.Properties.of().strength(2f).setId(ResourceKey.create(Registries.BLOCK, registryName)),
+                    SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    public static final DeferredItem<BlockItem> TESTIUMG_FENCE_GATE_ITEM = ITEMS.registerSimpleBlockItem(
+            "testiumg_fence_gate",
+            TESTIUMG_FENCE_GATE,
+            new Item.Properties());
 /*
-    public static final DeferredBlock<SlabBlock> TESTIUMR_SLAB = BLOCKS.register("testiumr_slab",
-            registryName -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
-    public static final DeferredItem<BlockItem> TESTIUMR_SLAB_ITEM = ITEMS.registerSimpleBlockItem(
-            "testiumr_slab",
-            TESTIUMR_SLAB,
-            new Item.Properties()
-    );
-public static final DeferredBlock<SlabBlock> TESTIUMR_SLAB = BLOCKS.register("testiumr_slab",
-            registryName -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
-
-
-    public static final DeferredBlock<ButtonBlock> TESTIUMR_BUTTON = BLOCKS.register("testiumr_button",
-            registryName -> new ButtonBlock(BlockSetType.IRON, 20,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
 
     public static final DeferredBlock<FenceBlock> TESTIUMR_FENCE = BLOCKS.register("testiumr_fence",
             registryName -> new FenceBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));

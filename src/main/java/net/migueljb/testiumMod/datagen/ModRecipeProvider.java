@@ -103,6 +103,30 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("AAA")
                 .define('A', ModBlocks.TESTIUMG_BLOCK.get())
                 .unlockedBy("has_testiumg_block", has(ModBlocks.TESTIUMG_SLAB)).save(this.output);
+        //FENCES
+        ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.DECORATIONS, ModBlocks.TESTIUMR_FENCE.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModBlocks.TESTIUMR_BLOCK.get())
+                .unlockedBy("has_testiumr_block", has(ModBlocks.TESTIUMR_FENCE)).save(this.output);
+        ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.DECORATIONS, ModBlocks.TESTIUMG_FENCE.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModBlocks.TESTIUMG_BLOCK.get())
+                .unlockedBy("has_testiumg_block", has(ModBlocks.TESTIUMG_FENCE)).save(this.output);
+        //Fence Gates
+        ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.DECORATIONS, ModBlocks.TESTIUMR_FENCE_GATE.get())
+                .pattern("ABA")
+                .pattern("ABA")
+                .define('A', ModBlocks.TESTIUMR_BLOCK.get())
+                .define('B', ModItems.TESTIUMR.get())
+                .unlockedBy("has_testiumr_block", has(ModBlocks.TESTIUMR_FENCE_GATE)).save(this.output);
+        ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.DECORATIONS, ModBlocks.TESTIUMG_FENCE_GATE.get())
+                .pattern("ABA")
+                .pattern("ABA")
+                .define('A', ModBlocks.TESTIUMG_BLOCK.get())
+                .define('B', ModItems.TESTIUMG.get())
+                .unlockedBy("has_testiumg_block", has(ModBlocks.TESTIUMG_FENCE_GATE)).save(this.output);
 
         oreSmelting2(TESTIUMSMELTABLES, RecipeCategory.MISC, ModItems.TESTIUM.get(), 0.45f, 1000, "testium");
         oreBlasting2(TESTIUMSMELTABLES, RecipeCategory.MISC, ModItems.TESTIUM.get(), 0.65f, 500, "testium");

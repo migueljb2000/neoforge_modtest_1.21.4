@@ -56,6 +56,12 @@ public class ModModelProvider extends ModelProvider {
         //Slabs
         blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMR_BLOCK.get()).slab(ModBlocks.TESTIUMR_SLAB.get());
         blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMG_BLOCK.get()).slab(ModBlocks.TESTIUMG_SLAB.get());
+        //Fences
+        blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMR_BLOCK.get()).fence(ModBlocks.TESTIUMR_FENCE.get());
+        blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMG_BLOCK.get()).fence(ModBlocks.TESTIUMG_FENCE.get());
+        //Fence Gates
+        blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMR_BLOCK.get()).fenceGate(ModBlocks.TESTIUMR_FENCE_GATE.get());
+        blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMG_BLOCK.get()).fenceGate(ModBlocks.TESTIUMG_FENCE_GATE.get());
         /*
         blockModels.createSlab(ModBlocks.TESTIUMR_SLAB.get(),
                 ModelTemplates.SLAB_BOTTOM.getDefaultModelLocation(ModBlocks.TESTIUMR_BLOCK.get()),

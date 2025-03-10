@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_testiumr_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "testiummod:testiumr_fence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "testiummod:testiumr_fence"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_testiumr_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "testiummod:testiumr_fence"
+    ]
+  }
+}

@@ -8,6 +8,8 @@
     "testiummod:testiumg_button",
     "testiummod:testiumg_stairs",
     "testiummod:testiumg_block",
+    "testiummod:testiumr_fence",
+    "testiummod:testiumr_fence_gate",
     "testiummod:testiumg_slab"
   ]
 }
