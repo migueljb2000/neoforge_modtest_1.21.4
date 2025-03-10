@@ -55,11 +55,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.TESTIUMG_FENCE.get());
         this.dropSelf(ModBlocks.TESTIUMR_FENCE_GATE.get());
         this.dropSelf(ModBlocks.TESTIUMG_FENCE_GATE.get());
-        //this.dropSelf(ModBlocks.TESTIUMR_WALL.get());
-        //this.dropSelf(ModBlocks.TESTIUMR_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.TESTIUMR_WALL.get());
+        this.dropSelf(ModBlocks.TESTIUMG_WALL.get());
+        this.dropSelf(ModBlocks.TESTIUMR_TRAPDOOR.get());
 
-        //this.add(ModBlocks.TESTIUMR_DOOR.get(),
-        //        this.createDoorTable(ModBlocks.TESTIUMR_DOOR.get()));
+        this.add(ModBlocks.TESTIUMR_DOOR.get(),
+                this.createDoorTable(ModBlocks.TESTIUMR_DOOR.get()));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

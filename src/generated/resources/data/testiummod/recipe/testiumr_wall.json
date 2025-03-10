@@ -1,8 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "building",
   "key": {
-    "A": "testiummod:testiumr"
+    "A": "testiummod:testiumr_block"
   },
   "pattern": [
     "AAA",
@@ -10,6 +10,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "testiummod:testiumr_fence"
+    "id": "testiummod:testiumr_wall"
   }
 }

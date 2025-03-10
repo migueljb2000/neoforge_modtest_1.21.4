@@ -73,9 +73,14 @@ public class ModCreativeModeTabs {
                             pOutput.accept((ModBlocks.TESTIUMR_FENCE_GATE.get()));
                             pOutput.accept((ModBlocks.TESTIUMG_FENCE_GATE.get()));
                             //pOutput.accept((ModBlocks.TESTIUMR_WALL.get()));
-                            //pOutput.accept((ModBlocks.TESTIUMR_TRAPDOOR.get()));
-                            //pOutput.accept((ModBlocks.TESTIUMR_TRAPDOOR.get()));
+                            //Doors
+                            pOutput.accept((ModBlocks.TESTIUMR_DOOR.get()));
+                            //Trapdoors
+                            pOutput.accept((ModBlocks.TESTIUMR_TRAPDOOR.get()));
                             //pOutput.accept((ModBlocks.TESTIUMR_BUTTON));
+                            //Walls
+                            pOutput.accept((ModBlocks.TESTIUMR_WALL.get()));
+                            pOutput.accept((ModBlocks.TESTIUMG_WALL.get()));
 
                         }
                     }).build());

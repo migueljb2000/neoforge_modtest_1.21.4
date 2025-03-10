@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right_open",
+  "textures": {
+    "bottom": "testiummod:block/testiumr_door_bottom",
+    "top": "testiummod:block/testiumr_door_top"
+  }
+}

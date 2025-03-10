@@ -10,6 +10,7 @@
     "testiummod:testiumg_block",
     "testiummod:testiumr_fence",
     "testiummod:testiumr_fence_gate",
-    "testiummod:testiumg_slab"
+    "testiummod:testiumg_slab",
+    "testiummod:testiumg_wall"
   ]
 }

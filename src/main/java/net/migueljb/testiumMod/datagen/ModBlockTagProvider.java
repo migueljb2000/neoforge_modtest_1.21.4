@@ -47,8 +47,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     this.tag(BlockTags.FENCE_GATES)
             .add(ModBlocks.TESTIUMR_FENCE_GATE.get())
             .add(ModBlocks.TESTIUMG_FENCE_GATE.get());
-    /*
+
+    this.tag(BlockTags.DOORS)
+            .add(ModBlocks.TESTIUMR_DOOR.get());
+    this.tag(BlockTags.TRAPDOORS)
+            .add(ModBlocks.TESTIUMR_TRAPDOOR.get());
+
     this.tag(BlockTags.WALLS)
-            .add(ModBlocks.TESTIUMR_WALL.get());
-    */}
+            .add(ModBlocks.TESTIUMR_WALL.get())
+            .add(ModBlocks.TESTIUMG_WALL.get());
+    }
 }

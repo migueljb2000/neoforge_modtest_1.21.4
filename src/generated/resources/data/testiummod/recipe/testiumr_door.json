@@ -5,11 +5,12 @@
     "A": "testiummod:testiumr"
   },
   "pattern": [
-    "AAA",
-    "AAA"
+    "AA",
+    "AA",
+    "AA"
   ],
   "result": {
     "count": 1,
-    "id": "testiummod:testiumr_fence"
+    "id": "testiummod:testiumr_door"
   }
 }

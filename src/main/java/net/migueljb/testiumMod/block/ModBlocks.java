@@ -176,6 +176,37 @@ public class ModBlocks {
             "testiumg_fence_gate",
             TESTIUMG_FENCE_GATE,
             new Item.Properties());
+    //Doors
+    public static final DeferredBlock<DoorBlock> TESTIUMR_DOOR = BLOCKS.register("testiumr_door",
+            registryName -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).noOcclusion()
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName))));
+    public static final DeferredItem<BlockItem> TESTIUMR_DOOR_ITEM = ITEMS.registerSimpleBlockItem(
+            "testiumr_door",
+            TESTIUMR_DOOR,
+            new Item.Properties());
+    //TrapDoors
+    public static final DeferredBlock<TrapDoorBlock> TESTIUMR_TRAPDOOR = BLOCKS.register("testiumr_trapdoor",
+            registryName -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).noOcclusion()
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName))));
+    public static final DeferredItem<BlockItem> TESTIUMR_TRAPDOOR_ITEM = ITEMS.registerSimpleBlockItem(
+            "testiumr_trapdoor",
+            TESTIUMR_TRAPDOOR,
+            new Item.Properties());
+    //Walls
+    public static final DeferredBlock<WallBlock> TESTIUMR_WALL = BLOCKS.register("testiumr_wall",
+            registryName -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName))));
+    public static final DeferredItem<BlockItem> TESTIUMR_WALL_ITEM = ITEMS.registerSimpleBlockItem(
+            "testiumr_wall",
+            TESTIUMR_WALL,
+            new Item.Properties());
+    public static final DeferredBlock<WallBlock> TESTIUMG_WALL = BLOCKS.register("testiumg_wall",
+            registryName -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName))));
+    public static final DeferredItem<BlockItem> TESTIUMG_WALL_ITEM = ITEMS.registerSimpleBlockItem(
+            "testiumg_wall",
+            TESTIUMG_WALL,
+            new Item.Properties());
 /*
 
     public static final DeferredBlock<FenceBlock> TESTIUMR_FENCE = BLOCKS.register("testiumr_fence",

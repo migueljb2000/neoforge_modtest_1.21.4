@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": "testiummod:testiumg_block"
+    "A": "testiummod:testiumg"
   },
   "pattern": [
     "AAA",

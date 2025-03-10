@@ -9,6 +9,9 @@
     "testiummod:testiumr_block",
     "testiummod:testiumg_fence",
     "testiummod:testiumg_fence_gate",
-    "testiummod:testiumr_slab"
+    "testiummod:testiumr_trapdoor",
+    "testiummod:testiumr_door",
+    "testiummod:testiumr_slab",
+    "testiummod:testiumr_wall"
   ]
 }

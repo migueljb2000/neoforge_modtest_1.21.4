@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "testiummod:testiumr_fence"
+            "items": "testiummod:testiumr_trapdoor"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "testiummod:testiumr_fence"
+        "recipe": "testiummod:testiumr_trapdoor"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "testiummod:testiumr_fence"
+      "testiummod:testiumr_trapdoor"
     ]
   }
 }
