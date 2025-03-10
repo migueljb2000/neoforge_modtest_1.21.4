@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "testiummod:block/testiumg_slab"
+    },
+    "type=double": {
+      "model": "testiummod:block/testiumg_block"
+    },
+    "type=top": {
+      "model": "testiummod:block/testiumg_slab_top"
+    }
+  }
+}

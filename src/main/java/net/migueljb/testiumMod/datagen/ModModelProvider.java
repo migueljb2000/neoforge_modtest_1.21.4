@@ -44,12 +44,18 @@ public class ModModelProvider extends ModelProvider {
         //blockModels.createTrivialCube(ModBlocks.TESTIUMR_STAIRS.get());
         System.out.println(ResourceLocation.fromNamespaceAndPath("minecraft", "oak_stairs"));
         //blockModels.createWeightedPressurePlate(ModBlocks.TESTIUMR_PRESSURE_PLATE.get(), ModBlocks.TESTIUMR_BLOCK.get());
+        //Pressure Plates
         blockModels.createWeightedPressurePlate(ModBlocks.TESTIUMR_PRESSURE_PLATE.get(), ModBlocks.TESTIUMR_BLOCK.get());
         blockModels.createWeightedPressurePlate(ModBlocks.TESTIUMG_PRESSURE_PLATE.get(), ModBlocks.TESTIUMG_BLOCK.get());
+        //Buttons
         blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMR_BLOCK.get()).button(ModBlocks.TESTIUMR_BUTTON.get());
         blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMG_BLOCK.get()).button(ModBlocks.TESTIUMG_BUTTON.get());
+        //Stairs
         blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMR_BLOCK.get()).stairs(ModBlocks.TESTIUMR_STAIRS.get());
         blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMG_BLOCK.get()).stairs(ModBlocks.TESTIUMG_STAIRS.get());
+        //Slabs
+        blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMR_BLOCK.get()).slab(ModBlocks.TESTIUMR_SLAB.get());
+        blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMG_BLOCK.get()).slab(ModBlocks.TESTIUMG_SLAB.get());
         /*
         blockModels.createSlab(ModBlocks.TESTIUMR_SLAB.get(),
                 ModelTemplates.SLAB_BOTTOM.getDefaultModelLocation(ModBlocks.TESTIUMR_BLOCK.get()),

@@ -28,14 +28,17 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             .add(ModBlocks.TESTIUMR_BLOCK.get())
             .add(ModBlocks.TESTIUMG_BLOCK.get())
             .add(ModBlocks.TESTIUMR_STAIRS.get())
-            .add(ModBlocks.TESTIUMG_STAIRS.get());
-            //.add(ModBlocks.TESTIUMR_SLAB.get());
+            .add(ModBlocks.TESTIUMG_STAIRS.get())
+            .add(ModBlocks.TESTIUMR_SLAB.get())
+            .add(ModBlocks.TESTIUMG_SLAB.get());
 
 
             //.add(ModBlocks.TESTIUMR_TRAPDOOR.get());
     this.tag(BlockTags.NEEDS_IRON_TOOL)
             .add(ModBlocks.GREENIUM_ORE_BLOCK.get())
-            .add(ModBlocks.REDIUM_ORE_BLOCK.get());
+            .add(ModBlocks.REDIUM_ORE_BLOCK.get())
+            .add(ModBlocks.TESTIUMR_SLAB.get())
+            .add(ModBlocks.TESTIUMG_SLAB.get());
     /*
     this.tag(BlockTags.FENCES)
             .add(ModBlocks.TESTIUMR_FENCE_GATE.get())

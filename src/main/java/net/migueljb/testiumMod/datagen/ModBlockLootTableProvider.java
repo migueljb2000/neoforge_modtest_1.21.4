@@ -42,8 +42,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 this.createMultipleOreDrops(ModBlocks.REDIUM_ORE_BLOCK.get(), ModItems.REDIUM.get(), 1, 9));
         this.dropSelf(ModBlocks.TESTIUMR_STAIRS.get());
         this.dropSelf(ModBlocks.TESTIUMG_STAIRS.get());
-        //this.add(ModBlocks.TESTIUMR_SLAB.get(),
-        //        this.createSlabItemTable(ModBlocks.TESTIUMR_SLAB.get()));
+        this.add(ModBlocks.TESTIUMR_SLAB.get(),
+                this.createSlabItemTable(ModBlocks.TESTIUMR_SLAB.get()));
+        this.add(ModBlocks.TESTIUMG_SLAB.get(),
+                this.createSlabItemTable(ModBlocks.TESTIUMG_SLAB.get()));
 
         this.dropSelf(ModBlocks.TESTIUMR_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.TESTIUMG_PRESSURE_PLATE.get());

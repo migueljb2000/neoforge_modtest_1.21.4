@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "testiummod:testiumr_pressure_plate"
+            "items": "testiummod:testiumr_slab"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "testiummod:testiumr_pressure_plate"
+        "recipe": "testiummod:testiumr_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "testiummod:testiumr_pressure_plate"
+      "testiummod:testiumr_slab"
     ]
   }
 }

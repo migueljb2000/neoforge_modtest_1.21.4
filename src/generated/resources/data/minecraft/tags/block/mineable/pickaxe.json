@@ -10,6 +10,8 @@
     "testiummod:testiumr_block",
     "testiummod:testiumg_block",
     "testiummod:testiumr_stairs",
-    "testiummod:testiumg_stairs"
+    "testiummod:testiumg_stairs",
+    "testiummod:testiumr_slab",
+    "testiummod:testiumg_slab"
   ]
 }

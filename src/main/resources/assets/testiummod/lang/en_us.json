@@ -2,37 +2,58 @@
   "item.testiummod.testium": "Testium Orb",
   "item.testiummod.testiumg": "Green Testium Orb",
   "item.testiummod.testiumr": "Red Testium Orb",
-  "item.testiummod.testiumr_block": "Red Testium Block",
-  "item.testiummod.tainter_block": "Tainter Furnace",
+
   "item.testiummod.chisel": "Test Chisel",
+
   "item.testiummod.tester": "Tester Tool",
+  "tooltip.testiummod.test_item.shift_down" : "Rework pending",
+  "tooltip.testiummod.test_item" :  "Throws ender pearls §9shift§r",
+
   "item.testiummod.green_beef": "Green Beef",
   "item.testiummod.raw_green_beef": "Raw Green Beef",
+
   "item.testiummod.red_coal": "Red Coal",
   "tooltip.testiummod.red_coal": "Burns like lava",
+
   "item.testiummod.greenium": "Greenium Shard",
   "item.testiummod.redium": "Redium Shard",
 
   "block.testiummod.testiumr_block": "Red Testium Block",
   "block.testiummod.testiumg_block": "Green Testium Block",
+
   "block.testiummod.redium_ore_block": "Redium Ore Block",
   "block.testiummod.greenium_ore_block": "Greenium Ore Block",
+
+  "item.testiummod.tainter_block": "Tainter Furnace",
   "block.testiummod.tainter_block": "Tainter Furnace",
   "tooltip.testiummod.tainter_block.tooltip" : "Functionality will be added §9soon§r ^^",
-  "tooltip.testiummod.test_item.shift_down" : "Rework pending",
-  "tooltip.testiummod.test_item" :  "Throws ender pearls §9shift§r",
 
-  "block.testiummod.testiumr_stairs": "Testiumr Stairs",
-  "block.testiummod.testiumr_slab": "Testiumr Slab",
+  "block.testiummod.testiumr_stairs": "Red Testium Stairs",
+  "block.testiummod.testiumg_stairs": "Green Testium Stairs",
+
+  "block.testiummod.testiumr_slab": "Red Testium Slab",
+  "block.testiummod.testiumg_slab": "Green Testium Slab",
+
   "block.testiummod.testiumr_pressure_plate": "Red Testium Pressure Plate",
   "block.testiummod.testiumg_pressure_plate": "Green Testium Pressure Plate",
-  "block.testiummod.testiumr_button": "Testiumr Button",
-  "block.testiummod.testiumr_fence": "Testiumr Fence",
-  "block.testiummod.testiumr_fence_gate": "Testiumr Fence Gate",
-  "block.testiummod.testiumr_wall": "Testiumr Wall",
-  "block.testiummod.testiumr_door": "Testiumr Door",
-  "block.testiummod.testiumr_trapdoor": "Testiumr Trapdoor",
 
+  "block.testiummod.testiumr_button": "Red Testium Button",
+  "block.testiummod.testiumg_button": "Green Testium Button",
+
+  "block.testiummod.testiumr_fence": "Red Testium Fence",
+  "block.testiummod.testiumg_fence": "green Testium Fence",
+
+  "block.testiummod.testiumr_fence_gate": "Red Testium Fence Gate",
+  "block.testiummod.testiumg_fence_gate": "Green Testium Fence Gate",
+
+  "block.testiummod.testiumr_wall": "Red Testium Wall",
+  "block.testiummod.testiumg_wall": "Green Testium Wall",
+
+  "block.testiummod.testiumr_door": "Red Testium Door",
+  "block.testiummod.testiumg_door": "Green Testium Door",
+
+  "block.testiummod.testiumr_trapdoor": "Red Testium Trapdoor",
+  "block.testiummod.testiumg_trapdoor": "Green Testium Trapdoor",
 
 
   "creativetab.testiummod.testium_items": "Testium Items",

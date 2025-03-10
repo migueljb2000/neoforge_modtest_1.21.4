@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_testiumr_block": {
+    "has_testiumg_block": {
       "conditions": {
         "items": [
           {
-            "items": "testiummod:testiumr_pressure_plate"
+            "items": "testiummod:testiumg_slab"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "testiummod:testiumr_pressure_plate"
+        "recipe": "testiummod:testiumg_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_testiumr_block"
+      "has_testiumg_block"
     ]
   ],
   "rewards": {
     "recipes": [
-      "testiummod:testiumr_pressure_plate"
+      "testiummod:testiumg_slab"
     ]
   }
 }

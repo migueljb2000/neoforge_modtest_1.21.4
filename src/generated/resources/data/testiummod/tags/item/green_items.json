@@ -7,6 +7,7 @@
     "testiummod:testiumg_pressure_plate",
     "testiummod:testiumg_button",
     "testiummod:testiumg_stairs",
-    "testiummod:testiumg_block"
+    "testiummod:testiumg_block",
+    "testiummod:testiumg_slab"
   ]
 }

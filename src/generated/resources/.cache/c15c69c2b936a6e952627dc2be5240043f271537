@@ -1,3 +1,3 @@
-// 1.21.4	2025-03-10T11:41:20.5239947	Tags for minecraft:block mod id testiummod
-34204570f88aaff96b3ce1d20f7c9a0563f296d5 data/minecraft/tags/block/mineable/pickaxe.json
-a1a42ba531913dda5e3864ccb429a5cdaa3af125 data/minecraft/tags/block/needs_iron_tool.json
+// 1.21.4	2025-03-10T12:01:43.1210521	Tags for minecraft:block mod id testiummod
+ddadfe460b22810f2c8bf93426b806a9143f0f1b data/minecraft/tags/block/mineable/pickaxe.json
+27bbf51a8e80265b16201f694d48bf934d4bad9a data/minecraft/tags/block/needs_iron_tool.json

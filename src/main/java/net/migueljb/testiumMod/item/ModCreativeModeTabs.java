@@ -54,8 +54,9 @@ public class ModCreativeModeTabs {
                             pOutput.accept((ModBlocks.REDIUM_ORE_BLOCK.get()));
                             pOutput.accept((ModBlocks.TESTIUMG_BLOCK.get()));
                             //Non Blocks
-                            //pOutput.accept((ModBlocks.TESTIUMR_STAIRS.get()));
-                            //pOutput.accept((ModBlocks.TESTIUMR_SLAB.get()));
+                            //Slabs
+                            pOutput.accept((ModBlocks.TESTIUMR_SLAB.get()));
+                            pOutput.accept((ModBlocks.TESTIUMG_SLAB.get()));
                             //Pressure Plates
                             pOutput.accept((ModBlocks.TESTIUMR_PRESSURE_PLATE.get()));
                             pOutput.accept((ModBlocks.TESTIUMG_PRESSURE_PLATE.get()));
