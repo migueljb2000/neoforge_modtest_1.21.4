@@ -9,5 +9,5 @@ import net.neoforged.neoforge.common.SimpleTier;
 
 public class ModToolTiers {
     public static final ToolMaterial Testium = new ToolMaterial(ModTags.Blocks.INCORRECT_FOR_TESTIUM_TOOL,
-    1400, 3f,28, 28, ModTags.Items.TESTIUM_INGOTS);
+    1400, 3f,8, 28, ModTags.Items.TESTIUM_INGOTS);
 }

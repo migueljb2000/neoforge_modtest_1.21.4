@@ -41,6 +41,11 @@ public class ModCreativeModeTabs {
                             pOutput.accept((ModItems.TESTIUM_PICKAXE).get());
                             pOutput.accept((ModItems.TESTIUM_HOE).get());
                             pOutput.accept((ModItems.TESTIUM_SHOVEL).get());
+                            pOutput.accept((ModItems.TESTIUM_HAMMER).get());
+                            pOutput.accept((ModItems.TESTIUM_HELMET).get());
+                            pOutput.accept((ModItems.TESTIUM_CHESTPLATE).get());
+                            pOutput.accept((ModItems.TESTIUM_LEGGINGS).get());
+                            pOutput.accept((ModItems.TESTIUM_BOOTS).get());
 
                         }
                     }).build());

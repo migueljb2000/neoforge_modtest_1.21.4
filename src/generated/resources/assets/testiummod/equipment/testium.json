@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "testiummod:testium/testiumarmor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "testiummod:testium/testiumarmorleggings"
+      }
+    ]
+  }
+}

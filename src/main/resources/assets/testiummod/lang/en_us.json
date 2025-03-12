@@ -25,7 +25,12 @@
   "item.testiummod.testium_shovel": "Testium Shovel",
   "item.testiummod.testium_axe": "Testium Axe",
   "item.testiummod.testium_hoe": "Testium Hoe",
+  "item.testiummod.testium_hammer": "Testium Hammer",
 
+  "item.testiummod.testium_helmet": "Testium Helmet",
+  "item.testiummod.testium_chesplate": "Testium Chestplate",
+  "item.testiummod.testium_leggins": "Testium Leggins",
+  "item.testiummod.testium_boots": "Testium Boots",
 
   "block.testiummod.testiumr_block": "Red Testium Block",
   "block.testiummod.testiumg_block": "Green Testium Block",

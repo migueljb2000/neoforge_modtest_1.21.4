@@ -22,6 +22,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -33,6 +34,7 @@ import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvi
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.model.obj.ObjMaterialLibrary;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.w3c.dom.Text;
 
@@ -161,15 +163,12 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.TESTIUM_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.TESTIUM_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.TESTIUM_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
-        //itemModels.generateFlatItem(ModBlocks.TESTIUMR_PRESSURE_PLATE.asItem(), ModBlocks.TESTIUMR_BLOCK.asItem(), ModelTemplates.FLAT_ITEM);
-        //itemModels.generateFlatItem(ModBlocks.TESTIUMR_PRESSURE_PLATE.get().asItem(), ModelTemplates.FLAT_ITEM);
-        //itemModels.generateFlatItem(Item.byBlock(ModBlocks.TESTIUMR_SLAB.get()), ModelTemplates.FLAT_ITEM);
-        //itemModels.generateFlatItem(ModBlocks.TESTIUMR_STAIRS.get().asItem(), ModelTemplates.FLAT_ITEM);
-        //itemModels.generateFlatItem(ModBlocks.TESTIUMR_BUTTON.get().asItem(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.TESTIUM_HAMMER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.TESTIUM_HELMET.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.TESTIUM_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.TESTIUM_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.TESTIUM_BOOTS.get(), ModelTemplates.FLAT_ITEM);
 
-        //itemModels.generateFlatItem(ModBlocks.TESTIUMR_TRAPDOOR.get().asItem(), ModelTemplates.FLAT_ITEM);
-        //itemModels.generateFlatItem(ModBlocks.TESTIUMR_SLAB.get().asItem(), ModelTemplates.FLAT_ITEM);
-        //itemModels.generateFlatItem(ModBlocks.TESTIUMR_DOOR.get().asItem(), ModelTemplates.FLAT_ITEM);
 
     }
 
