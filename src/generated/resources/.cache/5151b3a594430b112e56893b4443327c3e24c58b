@@ -1,4 +1,4 @@
-// 1.21.4	2025-03-10T13:52:00.6483113	Model Definitions - testiummod
+// 1.21.4	2025-03-12T12:52:52.3461372	Model Definitions - testiummod
 71bf8d302cc44eb3c42b9dfa4a7dd6a7841af153 assets/testiummod/blockstates/greenium_ore_block.json
 160b3bd8709560d348c28da45ea4e33e25fd15eb assets/testiummod/blockstates/redium_ore_block.json
 435cb135a455340651eca5a29b8e5988c6381d09 assets/testiummod/blockstates/tainter_block.json
@@ -20,6 +20,7 @@ a7563262e1607fc7992e50a4ab5db517439bd748 assets/testiummod/blockstates/testiumr_
 9fe4c7e005d9cfebf75b6e22671dd653acbb02b9 assets/testiummod/blockstates/testiumr_stairs.json
 a9640581664edc12d84dc6c9dd0da3b14f649e80 assets/testiummod/blockstates/testiumr_trapdoor.json
 e6d1add5bf17b9f63da2c31da513cfcbf817b63b assets/testiummod/blockstates/testiumr_wall.json
+4b98bef60d51e3a70b567daa8c2f93e63177ab1c assets/testiummod/blockstates/testium_lamp.json
 44e060ee244ccb87c0fc7d976b617d88d967fc22 assets/testiummod/items/chisel.json
 329c28bedd01b8fcc4c6f3a09f996949bdc320dc assets/testiummod/items/greenium.json
 0c9297b1929afe7a15bfc19a453d6329f2d29737 assets/testiummod/items/greenium_ore_block.json
@@ -51,6 +52,7 @@ dfe9cf18b7a254d3005f88d9d241390fe3d0eb2f assets/testiummod/items/testiumr_pressu
 0bc33785d3b89f693d391ca3d9280c52e57ce113 assets/testiummod/items/testiumr_stairs.json
 7ddd37c892aac1a33541ee3be12a79053512169b assets/testiummod/items/testiumr_trapdoor.json
 84047e667cde6556d9f15b776d832326d16a0e24 assets/testiummod/items/testiumr_wall.json
+75ee8521c843258a68708a44bacebb946fc8f95f assets/testiummod/items/testium_lamp.json
 60cdf0142525592a33ccd0bd5c2f384ab1013e06 assets/testiummod/models/block/greenium_ore_block.json
 b898bbb6c8847f805623f609894df7d3951e751e assets/testiummod/models/block/redium_ore_block.json
 3f9616f462b828c7325ceb65a515c9f464228136 assets/testiummod/models/block/tainter_block.json
@@ -109,6 +111,8 @@ c2bfb19d5f45fe1989711297006cb93a8ab6e120 assets/testiummod/models/block/testiumr
 92665da42e3929ae1f15d29484e8422a05c65910 assets/testiummod/models/block/testiumr_wall_post.json
 4e30d04bf33558c485e8bfcabb87fc19756d03fe assets/testiummod/models/block/testiumr_wall_side.json
 7727b228e4ab29c43c72a9de4426d3215beede7b assets/testiummod/models/block/testiumr_wall_side_tall.json
+2ce72b948a948f8e6a07781fc16d5ef1a38b9946 assets/testiummod/models/block/testium_lamp_off.json
+3c2fe4962ddae769e5092d24ab6c3afb1d5270a1 assets/testiummod/models/block/testium_lamp_on.json
 c5ac99275c663e4911d97e10a4dda0da92d1ec87 assets/testiummod/models/item/chisel.json
 279f13bc5bb6c62231f03cb9958cc7131819850f assets/testiummod/models/item/greenium.json
 4ff8dc6030ef99eb690574cfe619f8d6ce60ec8b assets/testiummod/models/item/green_beef.json

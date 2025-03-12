@@ -55,6 +55,8 @@
   "block.testiummod.testiumr_trapdoor": "Red Testium Trapdoor",
   "block.testiummod.testiumg_trapdoor": "Green Testium Trapdoor",
 
+  "block.testiummod.testium_lamp": "Testium Lamp",
+
 
   "creativetab.testiummod.testium_items": "Testium Items",
   "creativetab.testiummod.testium_blocks": "Testium Blocks"

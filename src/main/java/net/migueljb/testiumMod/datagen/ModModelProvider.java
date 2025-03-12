@@ -1,19 +1,21 @@
 package net.migueljb.testiumMod.datagen;
 
 
+import net.migueljb.testiumMod.TestiumMod;
 import net.migueljb.testiumMod.block.ModBlocks;
+import net.migueljb.testiumMod.block.custom.TestiumLampBlock;
 import net.migueljb.testiumMod.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
+import net.minecraft.client.data.models.blockstates.PropertyDispatch;
 import net.minecraft.client.data.models.blockstates.Variant;
 import net.minecraft.client.data.models.blockstates.VariantProperties;
-import net.minecraft.client.data.models.model.ModelTemplate;
-import net.minecraft.client.data.models.model.ModelTemplates;
-import net.minecraft.client.data.models.model.TexturedModel;
+import net.minecraft.client.data.models.model.*;
 import net.minecraft.client.particle.BlockMarker;
 import net.minecraft.client.renderer.block.ModelBlockRenderer;
+import net.minecraft.client.renderer.block.model.BlockModel;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataProvider;
@@ -23,11 +25,14 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.model.obj.ObjMaterialLibrary;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.w3c.dom.Text;
 
 public class ModModelProvider extends ModelProvider {
     public ModModelProvider(PackOutput output) {
@@ -68,6 +73,9 @@ public class ModModelProvider extends ModelProvider {
         //Walls
         blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMR_BLOCK.get()).wall(ModBlocks.TESTIUMR_WALL.get());
         blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMG_BLOCK.get()).wall(ModBlocks.TESTIUMG_WALL.get());
+
+        generateTestiumLampBlock(blockModels);
+
         /*
         blockModels.createSlab(ModBlocks.TESTIUMR_SLAB.get(),
                 ModelTemplates.SLAB_BOTTOM.getDefaultModelLocation(ModBlocks.TESTIUMR_BLOCK.get()),
@@ -158,6 +166,35 @@ public class ModModelProvider extends ModelProvider {
 
     }
 
+    private void generateTestiumLampBlock(BlockModelGenerators blockModels) {
+        Block block = ModBlocks.TESTIUM_LAMP.get();
+        BooleanProperty CLICKED = TestiumLampBlock.CLICKED;
+
+
+        // ✅ Correct TextureMappings for on/off states
+        TextureMapping textureMappingOn = (new TextureMapping())
+                .put(TextureSlot.ALL, TextureMapping.getBlockTexture(block, "_on"));
+
+        TextureMapping textureMappingOff = (new TextureMapping())
+                .put(TextureSlot.ALL, TextureMapping.getBlockTexture(block, "_off"));
+
+        // ✅ Generate models correctly using the API
+        ResourceLocation onModel = ModelTemplates.CUBE_ALL.createWithSuffix(block, "_on", textureMappingOn, blockModels.modelOutput);
+        ResourceLocation offModel = ModelTemplates.CUBE_ALL.createWithSuffix(block, "_off", textureMappingOff, blockModels.modelOutput);
+
+        // ✅ Register item model (Ensures block items match)
+        blockModels.registerSimpleItemModel(block, ResourceLocation.fromNamespaceAndPath(TestiumMod.MOD_ID, "block/testium_lamp_on"));
+
+        // Generate blockstate JSON with variants
+        blockModels.blockStateOutput.accept(
+                MultiVariantGenerator.multiVariant(block)
+                        .with(
+                                PropertyDispatch.property(CLICKED)
+                                        .select(false, Variant.variant().with(VariantProperties.MODEL, offModel))
+                                        .select(true, Variant.variant().with(VariantProperties.MODEL, onModel))
+                        )
+        );
+    }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock){
 

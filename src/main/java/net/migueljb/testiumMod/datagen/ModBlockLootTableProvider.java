@@ -58,6 +58,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.TESTIUMR_WALL.get());
         this.dropSelf(ModBlocks.TESTIUMG_WALL.get());
         this.dropSelf(ModBlocks.TESTIUMR_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.TESTIUM_LAMP.get());
 
         this.add(ModBlocks.TESTIUMR_DOOR.get(),
                 this.createDoorTable(ModBlocks.TESTIUMR_DOOR.get()));

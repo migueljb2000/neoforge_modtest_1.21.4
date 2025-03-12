@@ -3,12 +3,14 @@ package net.migueljb.testiumMod.item;
 import net.migueljb.testiumMod.TestiumMod;
 import net.migueljb.testiumMod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.data.PackOutput;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.lwjgl.system.windows.POINT;
 
 import java.util.function.Supplier;
 
@@ -81,6 +83,8 @@ public class ModCreativeModeTabs {
                             //Walls
                             pOutput.accept((ModBlocks.TESTIUMR_WALL.get()));
                             pOutput.accept((ModBlocks.TESTIUMG_WALL.get()));
+                            //LAMPS
+                            pOutput.accept((ModBlocks.TESTIUM_LAMP.get()));
 
                         }
                     }).build());

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "testiummod:block/testium_lamp_off"
+    },
+    "clicked=true": {
+      "model": "testiummod:block/testium_lamp_on"
+    }
+  }
+}

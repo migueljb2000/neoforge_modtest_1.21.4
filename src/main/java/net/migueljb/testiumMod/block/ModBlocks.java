@@ -3,6 +3,7 @@ package net.migueljb.testiumMod.block;
 
 import net.migueljb.testiumMod.TestiumMod;
 import net.migueljb.testiumMod.block.custom.TainterBlock;
+import net.migueljb.testiumMod.block.custom.TestiumLampBlock;
 import net.migueljb.testiumMod.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -206,6 +207,16 @@ public class ModBlocks {
     public static final DeferredItem<BlockItem> TESTIUMG_WALL_ITEM = ITEMS.registerSimpleBlockItem(
             "testiumg_wall",
             TESTIUMG_WALL,
+            new Item.Properties());
+
+    //Lamp
+    public static final DeferredBlock<Block> TESTIUM_LAMP = BLOCKS.register("testium_lamp",
+            registryName -> new TestiumLampBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()
+                    .lightLevel(state -> state.getValue(TestiumLampBlock.CLICKED) ? 15 : 0)
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName))));
+    public static final DeferredItem<BlockItem> TESTIUMG_LAMP_ITEM = ITEMS.registerSimpleBlockItem(
+            "testium_lamp",
+            TESTIUM_LAMP,
             new Item.Properties());
 /*
 
