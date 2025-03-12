@@ -4,6 +4,8 @@
   "item.testiummod.testiumr": "Red Testium Orb",
 
   "item.testiummod.chisel": "Test Chisel",
+  "tooltip.testiummod.chisel.shift_down": "This Item can chisel Blocks into Bricks",
+  "tooltip.testiummod.chisel": "Press §eShift§r for more Information",
 
   "item.testiummod.tester": "Tester Tool",
   "tooltip.testiummod.test_item.shift_down" : "Rework pending",
