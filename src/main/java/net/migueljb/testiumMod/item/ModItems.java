@@ -9,9 +9,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.food.Foods;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -41,6 +39,17 @@ public class ModItems {
     public static final DeferredItem<Item> REDIUM = ITEMS.registerItem("redium",
             Item::new,
             new Item.Properties());
+
+    public static final DeferredItem<SwordItem> TESTIUM_SWORD = ITEMS.registerItem("testium_sword",
+            props -> new SwordItem(ModToolTiers.Testium, 3,-2.4f, props));
+    public static final DeferredItem<AxeItem> TESTIUM_AXE = ITEMS.registerItem("testium_axe",
+            props -> new AxeItem(ModToolTiers.Testium, 6.0F,-3.2f, props));
+    public static final DeferredItem<PickaxeItem> TESTIUM_PICKAXE = ITEMS.registerItem("testium_pickaxe",
+            props -> new PickaxeItem(ModToolTiers.Testium, 1.0F,-2.8f, props));
+    public static final DeferredItem<ShovelItem> TESTIUM_SHOVEL = ITEMS.registerItem("testium_shovel",
+            props -> new ShovelItem(ModToolTiers.Testium, 1.5F,-3.0f, props));
+    public static final DeferredItem<HoeItem> TESTIUM_HOE = ITEMS.registerItem("testium_hoe",
+            props -> new HoeItem(ModToolTiers.Testium, 0F,-3.0f, props));
 
 
     /*

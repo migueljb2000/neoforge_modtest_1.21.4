@@ -1,4 +1,4 @@
-// 1.21.4	2025-03-12T12:52:52.3461372	Model Definitions - testiummod
+// 1.21.4	2025-03-12T14:16:10.1852159	Model Definitions - testiummod
 71bf8d302cc44eb3c42b9dfa4a7dd6a7841af153 assets/testiummod/blockstates/greenium_ore_block.json
 160b3bd8709560d348c28da45ea4e33e25fd15eb assets/testiummod/blockstates/redium_ore_block.json
 435cb135a455340651eca5a29b8e5988c6381d09 assets/testiummod/blockstates/tainter_block.json
@@ -52,7 +52,12 @@ dfe9cf18b7a254d3005f88d9d241390fe3d0eb2f assets/testiummod/items/testiumr_pressu
 0bc33785d3b89f693d391ca3d9280c52e57ce113 assets/testiummod/items/testiumr_stairs.json
 7ddd37c892aac1a33541ee3be12a79053512169b assets/testiummod/items/testiumr_trapdoor.json
 84047e667cde6556d9f15b776d832326d16a0e24 assets/testiummod/items/testiumr_wall.json
+27f6c9f810b37e942af05ee930974f1df801003d assets/testiummod/items/testium_axe.json
+e78246d5994523dd9ed1fec782bfbef514fd4e57 assets/testiummod/items/testium_hoe.json
 75ee8521c843258a68708a44bacebb946fc8f95f assets/testiummod/items/testium_lamp.json
+68325a61ca601271463aedc3e628fe4998c8321e assets/testiummod/items/testium_pickaxe.json
+be1bfa46f70da9212152e8392cb1ae04308573e4 assets/testiummod/items/testium_shovel.json
+799c87f9b8a4c33f82b0eea332df2ff282beaae8 assets/testiummod/items/testium_sword.json
 60cdf0142525592a33ccd0bd5c2f384ab1013e06 assets/testiummod/models/block/greenium_ore_block.json
 b898bbb6c8847f805623f609894df7d3951e751e assets/testiummod/models/block/redium_ore_block.json
 3f9616f462b828c7325ceb65a515c9f464228136 assets/testiummod/models/block/tainter_block.json
@@ -125,3 +130,8 @@ f489fccdef61304a3d7896ad75f9c688a774175f assets/testiummod/models/item/testiumg.
 ecbdaeefe9ee3983a7619a765cd44d1977f70b04 assets/testiummod/models/item/testiumr.json
 366645193ec0e0b43c9a7bea277c28e2be31030d assets/testiummod/models/item/testiumr_block.json
 b00883ea3a068ea6e1cde71b184fc67eacdf0439 assets/testiummod/models/item/testiumr_door.json
+657239d2d47cad3cf71ccb71b627b01e5ea50853 assets/testiummod/models/item/testium_axe.json
+345ba6efe2fdc0d58e62d36ad8b8c91cc48ec4c9 assets/testiummod/models/item/testium_hoe.json
+1c5b642874ba9cf9c7647a2dcc26f557d852fb92 assets/testiummod/models/item/testium_pickaxe.json
+c0c5a532c4b846c22ae3b287f948af9c24d53fcc assets/testiummod/models/item/testium_shovel.json
+d9c792b7f4a339daeb73f85ba9fe9b1feca78490 assets/testiummod/models/item/testium_sword.json

@@ -20,6 +20,13 @@
   "item.testiummod.greenium": "Greenium Shard",
   "item.testiummod.redium": "Redium Shard",
 
+  "item.testiummod.testium_sword": "Testium Sword",
+  "item.testiummod.testium_pickaxe": "Testium Pickaxe",
+  "item.testiummod.testium_shovel": "Testium Shovel",
+  "item.testiummod.testium_axe": "Testium Axe",
+  "item.testiummod.testium_hoe": "Testium Hoe",
+
+
   "block.testiummod.testiumr_block": "Red Testium Block",
   "block.testiummod.testiumg_block": "Green Testium Block",
 

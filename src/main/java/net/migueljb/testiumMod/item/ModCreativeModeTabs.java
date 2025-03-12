@@ -36,6 +36,11 @@ public class ModCreativeModeTabs {
                             pOutput.accept((ModItems.RED_COAL).get());
                             pOutput.accept((ModItems.GREENIUM).get());
                             pOutput.accept((ModItems.REDIUM).get());
+                            pOutput.accept((ModItems.TESTIUM_SWORD).get());
+                            pOutput.accept((ModItems.TESTIUM_AXE).get());
+                            pOutput.accept((ModItems.TESTIUM_PICKAXE).get());
+                            pOutput.accept((ModItems.TESTIUM_HOE).get());
+                            pOutput.accept((ModItems.TESTIUM_SHOVEL).get());
 
                         }
                     }).build());

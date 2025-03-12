@@ -12,6 +12,8 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.List;
 import java.util.Objects;
@@ -152,6 +154,52 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("AAA")
                 .define('A', ModBlocks.TESTIUMG_BLOCK.get())
                 .unlockedBy("has_testiumg_block", has(ModBlocks.TESTIUMG_WALL)).save(this.output);
+
+        //Lamp
+        ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.REDSTONE, ModBlocks.TESTIUM_LAMP.get())
+                .pattern("BAB")
+                .pattern("ABA")
+                .pattern("BAB")
+                .define('A', ModItems.TESTIUM.get())
+                .define('B', Blocks.GLOWSTONE)
+                .unlockedBy("has_testium", has(ModBlocks.TESTIUM_LAMP)).save(this.output);
+
+        //Tools
+        ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.REDSTONE, ModItems.TESTIUM_HOE.get())
+                .pattern("BB ")
+                .pattern(" A ")
+                .pattern(" A ")
+                .define('A', Items.STICK)
+                .define('B', ModItems.TESTIUM.get())
+                .unlockedBy("has_testium", has(ModItems.TESTIUM_HOE)).save(this.output);
+        ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.REDSTONE, ModItems.TESTIUM_SWORD.get())
+                .pattern(" B ")
+                .pattern(" B ")
+                .pattern(" A ")
+                .define('A', Items.STICK)
+                .define('B', ModItems.TESTIUM.get())
+                .unlockedBy("has_testium", has(ModItems.TESTIUM_SWORD)).save(this.output);
+        ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.REDSTONE, ModItems.TESTIUM_PICKAXE.get())
+                .pattern("BBB")
+                .pattern(" A ")
+                .pattern(" A ")
+                .define('A', Items.STICK)
+                .define('B', ModItems.TESTIUM.get())
+                .unlockedBy("has_testium", has(ModItems.TESTIUM_PICKAXE)).save(this.output);
+        ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.REDSTONE, ModItems.TESTIUM_AXE.get())
+                .pattern("BB ")
+                .pattern("BA ")
+                .pattern(" A ")
+                .define('A', Items.STICK)
+                .define('B', ModItems.TESTIUM.get())
+                .unlockedBy("has_testium", has(ModItems.TESTIUM_AXE)).save(this.output);
+        ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.REDSTONE, ModItems.TESTIUM_SHOVEL.get())
+                .pattern(" B ")
+                .pattern(" A ")
+                .pattern(" A ")
+                .define('A', Items.STICK)
+                .define('B', ModItems.TESTIUM.get())
+                .unlockedBy("has_testium", has(ModItems.TESTIUM_SHOVEL)).save(this.output);
 
         oreSmelting2(TESTIUMSMELTABLES, RecipeCategory.MISC, ModItems.TESTIUM.get(), 0.45f, 1000, "testium");
         oreBlasting2(TESTIUMSMELTABLES, RecipeCategory.MISC, ModItems.TESTIUM.get(), 0.65f, 500, "testium");

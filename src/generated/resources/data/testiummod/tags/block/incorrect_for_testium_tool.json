@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#testiummod:needs_testium_tool"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_iron_tool"
+  ]
+}

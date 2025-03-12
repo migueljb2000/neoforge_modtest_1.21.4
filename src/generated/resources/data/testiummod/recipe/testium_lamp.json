@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "A": "testiummod:testium",
+    "B": "minecraft:glowstone"
+  },
+  "pattern": [
+    "BAB",
+    "ABA",
+    "BAB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "testiummod:testium_lamp"
+  }
+}

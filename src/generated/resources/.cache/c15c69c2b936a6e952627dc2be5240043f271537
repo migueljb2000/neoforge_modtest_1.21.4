@@ -1,4 +1,4 @@
-// 1.21.4	2025-03-10T13:52:00.6538265	Tags for minecraft:block mod id testiummod
+// 1.21.4	2025-03-12T14:16:10.1892268	Tags for minecraft:block mod id testiummod
 3825b9b9df0c0ae4e0f3f14b7cb80cbbbe6c635b data/minecraft/tags/block/doors.json
 598626df1d8eb2c0bc98244180f67e9661aa4c60 data/minecraft/tags/block/fences.json
 a4a247c07aecbc652e359d5aadcbf2db88acffdf data/minecraft/tags/block/fence_gates.json
@@ -6,3 +6,5 @@ ddadfe460b22810f2c8bf93426b806a9143f0f1b data/minecraft/tags/block/mineable/pick
 27bbf51a8e80265b16201f694d48bf934d4bad9a data/minecraft/tags/block/needs_iron_tool.json
 9bfa69d65ebf19150eb46f5371e2dc58dc46a728 data/minecraft/tags/block/trapdoors.json
 dc1b30ce2ee3d9e40b2f7d4bb0eafc2f5215dd76 data/minecraft/tags/block/walls.json
+7de1d25f426e3fca279a8af857e70ecd6c29a98e data/testiummod/tags/block/incorrect_for_testium_tool.json
+32b13946c4cd1f944b029659ccce5fcb2adad4ff data/testiummod/tags/block/needs_testium_tool.json

@@ -69,7 +69,28 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModBlocks.TESTIUMR_DOOR.get().asItem())
                 .add(ModBlocks.TESTIUMR_SLAB.get().asItem())
                 .add(ModBlocks.TESTIUMR_WALL.get().asItem());
-    //.add(Item.byBlock(ModBlocks.TESTIUMR_TRAPDOOR.get()));
+
+        tag(ModTags.Items.TESTIUM_INGOTS)
+                .add(ModItems.TESTIUM.get());
+
+        tag(ItemTags.AXES)
+                .add(ModItems.TESTIUM_AXE.get());
+
+        tag(ItemTags.PICKAXES)
+                .add((ModItems.TESTIUM_PICKAXE.get()));
+
+        tag(ItemTags.SWORDS)
+                .add((ModItems.TESTIUM_SWORD.get()));
+
+        tag(ItemTags.SHOVELS)
+                .add((ModItems.TESTIUM_SHOVEL.get()));
+
+        tag(ItemTags.HOES)
+                .add((ModItems.TESTIUM_HOE.get()));
+
+
+
+
 
 
 

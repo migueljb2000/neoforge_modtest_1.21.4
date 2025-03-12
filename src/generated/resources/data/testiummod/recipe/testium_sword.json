@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "A": "minecraft:stick",
+    "B": "testiummod:testium"
+  },
+  "pattern": [
+    " B ",
+    " B ",
+    " A "
+  ],
+  "result": {
+    "count": 1,
+    "id": "testiummod:testium_sword"
+  }
+}
