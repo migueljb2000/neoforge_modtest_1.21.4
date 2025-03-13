@@ -185,6 +185,14 @@ public class ModBlocks {
             "testiumr_door",
             TESTIUMR_DOOR,
             new Item.Properties());
+
+    public static final DeferredBlock<DoorBlock> TESTIUMG_DOOR = BLOCKS.register("testiumg_door",
+            registryName -> new DoorBlock(BlockSetType.GOLD, BlockBehaviour.Properties.of().strength(2f).noOcclusion()
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName))));
+    public static final DeferredItem<BlockItem> TESTIUMG_DOOR_ITEM = ITEMS.registerSimpleBlockItem(
+            "testiumg_door",
+            TESTIUMG_DOOR,
+            new Item.Properties());
     //TrapDoors
     public static final DeferredBlock<TrapDoorBlock> TESTIUMR_TRAPDOOR = BLOCKS.register("testiumr_trapdoor",
             registryName -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).noOcclusion()
@@ -192,6 +200,14 @@ public class ModBlocks {
     public static final DeferredItem<BlockItem> TESTIUMR_TRAPDOOR_ITEM = ITEMS.registerSimpleBlockItem(
             "testiumr_trapdoor",
             TESTIUMR_TRAPDOOR,
+            new Item.Properties());
+
+    public static final DeferredBlock<TrapDoorBlock> TESTIUMG_TRAPDOOR = BLOCKS.register("testiumg_trapdoor",
+            registryName -> new TrapDoorBlock(BlockSetType.GOLD, BlockBehaviour.Properties.of().strength(2f).noOcclusion()
+                    .setId(ResourceKey.create(Registries.BLOCK, registryName))));
+    public static final DeferredItem<BlockItem> TESTIUMG_TRAPDOOR_ITEM = ITEMS.registerSimpleBlockItem(
+            "testiumg_trapdoor",
+            TESTIUMG_TRAPDOOR,
             new Item.Properties());
     //Walls
     public static final DeferredBlock<WallBlock> TESTIUMR_WALL = BLOCKS.register("testiumr_wall",

@@ -136,12 +136,23 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("AA")
                 .define('A', ModItems.TESTIUMR.get())
                 .unlockedBy("has_testiumr", has(ModBlocks.TESTIUMR_DOOR)).save(this.output);
+        ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.DECORATIONS, ModBlocks.TESTIUMG_DOOR.get())
+                .pattern("AA")
+                .pattern("AA")
+                .pattern("AA")
+                .define('A', ModItems.TESTIUMG.get())
+                .unlockedBy("has_testiumg", has(ModBlocks.TESTIUMG_DOOR)).save(this.output);
         //TrapDoors
         ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.DECORATIONS, ModBlocks.TESTIUMR_TRAPDOOR.get())
                 .pattern("AA")
                 .pattern("AA")
                 .define('A', ModItems.TESTIUMR.get())
                 .unlockedBy("has_testiumr", has(ModBlocks.TESTIUMR_TRAPDOOR)).save(this.output);
+        ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.DECORATIONS, ModBlocks.TESTIUMG_TRAPDOOR.get())
+                .pattern("AA")
+                .pattern("AA")
+                .define('A', ModItems.TESTIUMG.get())
+                .unlockedBy("has_testiumg", has(ModBlocks.TESTIUMG_TRAPDOOR)).save(this.output);
 
         //Walls
         ShapedRecipeBuilder.shaped(this.registries.lookupOrThrow(Registries.ITEM), RecipeCategory.BUILDING_BLOCKS, ModBlocks.TESTIUMR_WALL.get())

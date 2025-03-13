@@ -23,6 +23,7 @@ public class ModTags {
         public static final TagKey<Item> GREEN_ITEMS = createTag("green_items");
         public static final TagKey<Item> RED_ITEMS = createTag("red_items");
         public static final TagKey<Item> TESTIUM_INGOTS = createTag("testium_ingots");
+        public static final TagKey<Item> TESTIUM_ARMOR = createTag("testium_armor");
 
         private static TagKey<Item> createTag(String name){
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(TestiumMod.MOD_ID, name));

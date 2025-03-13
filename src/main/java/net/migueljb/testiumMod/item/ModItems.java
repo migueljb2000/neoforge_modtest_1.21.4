@@ -3,6 +3,7 @@ package net.migueljb.testiumMod.item;
 import net.migueljb.testiumMod.TestiumMod;
 import net.migueljb.testiumMod.item.custom.ChiselItem;
 import net.migueljb.testiumMod.item.custom.HammerItem;
+import net.migueljb.testiumMod.item.custom.ModArmorItem;
 import net.migueljb.testiumMod.item.custom.TesterItem;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
@@ -76,7 +77,7 @@ public class ModItems {
             )
     );
     public static final DeferredItem<ArmorItem> TESTIUM_CHESTPLATE =
-            ITEMS.registerItem("testium_chestplate", props -> new ArmorItem(TESTIUM_ARMOR_MATERIAL,
+            ITEMS.registerItem("testium_chestplate", props -> new ModArmorItem(TESTIUM_ARMOR_MATERIAL,
                     ArmorType.CHESTPLATE,
                     props));
     public static final DeferredItem<ArmorItem> TESTIUM_LEGGINGS =

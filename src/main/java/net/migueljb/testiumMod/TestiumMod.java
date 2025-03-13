@@ -107,7 +107,9 @@ public class TestiumMod
         public static void onClientSetup(FMLClientSetupEvent event) {
             event.enqueueWork(() -> {
                 ItemBlockRenderTypes.setRenderLayer(ModBlocks.TESTIUMR_DOOR.get(), RenderType.cutout());
+                ItemBlockRenderTypes.setRenderLayer(ModBlocks.TESTIUMG_DOOR.get(), RenderType.cutout());
                 ItemBlockRenderTypes.setRenderLayer(ModBlocks.TESTIUMR_TRAPDOOR.get(), RenderType.cutout());
+                ItemBlockRenderTypes.setRenderLayer(ModBlocks.TESTIUMG_TRAPDOOR.get(), RenderType.cutout());
             });
         }
     }

@@ -87,9 +87,24 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(ItemTags.HOES)
                 .add((ModItems.TESTIUM_HOE.get()));
-
-
-
+        tag(ItemTags.CHEST_ARMOR)
+                .add(ModItems.TESTIUM_CHESTPLATE.get());
+        tag(ItemTags.LEG_ARMOR)
+                .add(ModItems.TESTIUM_LEGGINGS.get());
+        tag(ItemTags.HEAD_ARMOR)
+                .add(ModItems.TESTIUM_HELMET.get());
+        tag(ItemTags.FOOT_ARMOR)
+                .add(ModItems.TESTIUM_BOOTS.get());
+        tag(ItemTags.ARMOR_ENCHANTABLE)
+                .add(ModItems.TESTIUM_CHESTPLATE.get())
+                .add(ModItems.TESTIUM_LEGGINGS.get())
+                .add(ModItems.TESTIUM_HELMET.get())
+                .add(ModItems.TESTIUM_BOOTS.get());
+        tag(ModTags.Items.TESTIUM_ARMOR)
+                .add(ModItems.TESTIUM_CHESTPLATE.get())
+                .add(ModItems.TESTIUM_LEGGINGS.get())
+                .add(ModItems.TESTIUM_HELMET.get())
+                .add(ModItems.TESTIUM_BOOTS.get());
 
 
 

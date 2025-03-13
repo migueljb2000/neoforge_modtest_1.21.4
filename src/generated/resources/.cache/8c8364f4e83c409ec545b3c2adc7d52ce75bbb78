@@ -1,9 +1,15 @@
-// 1.21.4	2025-03-12T14:16:10.190217	Tags for minecraft:item mod id vanilla
+// 1.21.4	2025-03-13T13:10:21.3103397	Tags for minecraft:item mod id vanilla
 3eb4d79ceeb169f3688250236905b7452d0bc018 data/minecraft/tags/item/axes.json
+61f648434fe8bd9bc485a37791cff49cf47e9f9d data/minecraft/tags/item/chest_armor.json
+51479847e1b09a2db6222aeaa493b8eb8e20fc70 data/minecraft/tags/item/enchantable/armor.json
+48403253080d7c88fa517f4cb4102448b76f21ea data/minecraft/tags/item/foot_armor.json
+20d458f44cc4b7432e3fba58790070e4d9fde8ef data/minecraft/tags/item/head_armor.json
 a4f00805b3eb5562afbfce1aaeff878a362e9f03 data/minecraft/tags/item/hoes.json
+6de9f196b8c8d32f757abeea2b6a26cb7645823c data/minecraft/tags/item/leg_armor.json
 6ee968cae39aad2b6aac5884412f644502048172 data/minecraft/tags/item/pickaxes.json
 6290e5b91cf315b79b4116a9c45ea1eb29545ab1 data/minecraft/tags/item/shovels.json
 1a741167c517e4cdb2f8080b8313e00f6ba76d98 data/minecraft/tags/item/swords.json
 cf9319810ab65bf4d304471ce86c8e3d5ecdb0a4 data/testiummod/tags/item/green_items.json
 e34e01ebd7128ecf24fb070dcc9a5cbb98c1c617 data/testiummod/tags/item/red_items.json
+51479847e1b09a2db6222aeaa493b8eb8e20fc70 data/testiummod/tags/item/testium_armor.json
 1af16c5542d79b4527669223ad5e067f19fcc46a data/testiummod/tags/item/testium_ingots.json

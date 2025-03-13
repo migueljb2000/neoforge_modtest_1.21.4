@@ -74,6 +74,8 @@ public class ModModelProvider extends ModelProvider {
         //Doors
         blockModels.createDoor(ModBlocks.TESTIUMR_DOOR.get());
         blockModels.createTrapdoor(ModBlocks.TESTIUMR_TRAPDOOR.get());
+        blockModels.createDoor(ModBlocks.TESTIUMG_DOOR.get());
+        blockModels.createTrapdoor(ModBlocks.TESTIUMG_TRAPDOOR.get());
         //Walls
         blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMR_BLOCK.get()).wall(ModBlocks.TESTIUMR_WALL.get());
         blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMG_BLOCK.get()).wall(ModBlocks.TESTIUMG_WALL.get());
