@@ -78,6 +78,9 @@ public class ModModelProvider extends ModelProvider {
         blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMR_BLOCK.get()).wall(ModBlocks.TESTIUMR_WALL.get());
         blockModels.familyWithExistingFullBlock(ModBlocks.TESTIUMG_BLOCK.get()).wall(ModBlocks.TESTIUMG_WALL.get());
 
+
+
+
         generateTestiumLampBlock(blockModels);
 
         /*

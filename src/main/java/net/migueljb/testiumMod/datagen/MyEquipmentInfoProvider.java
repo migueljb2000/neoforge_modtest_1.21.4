@@ -36,7 +36,7 @@ public class MyEquipmentInfoProvider implements DataProvider {
                                 new EquipmentClientInfo.Layer(
                                         // The relative texture of the armor
                                         // Points to assets/examplemod/textures/entity/equipment/copper/outer.png
-                                        ResourceLocation.fromNamespaceAndPath("testiummod", "testium/testiumarmor"),
+                                        ResourceLocation.fromNamespaceAndPath("testiummod", "testium/testium_armor"),
                                         Optional.empty(),
                                         false
                                 )
@@ -46,7 +46,7 @@ public class MyEquipmentInfoProvider implements DataProvider {
                                 EquipmentClientInfo.LayerType.HUMANOID_LEGGINGS,
                                 new EquipmentClientInfo.Layer(
                                         // Points to assets/examplemod/textures/entity/equipment/copper/inner.png
-                                        ResourceLocation.fromNamespaceAndPath("testiummod", "testium/testiumarmorleggings"),
+                                        ResourceLocation.fromNamespaceAndPath("testiummod", "testium/testium_armor_leggings"),
                                         Optional.empty(),
                                         false
                                 )

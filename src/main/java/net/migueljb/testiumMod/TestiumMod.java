@@ -4,6 +4,8 @@ import net.migueljb.testiumMod.block.ModBlocks;
 import net.migueljb.testiumMod.component.ModDataComponents;
 import net.migueljb.testiumMod.item.ModCreativeModeTabs;
 import net.migueljb.testiumMod.item.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -102,6 +104,11 @@ public class TestiumMod
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents{
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {}
+        public static void onClientSetup(FMLClientSetupEvent event) {
+            event.enqueueWork(() -> {
+                ItemBlockRenderTypes.setRenderLayer(ModBlocks.TESTIUMR_DOOR.get(), RenderType.cutout());
+                ItemBlockRenderTypes.setRenderLayer(ModBlocks.TESTIUMR_TRAPDOOR.get(), RenderType.cutout());
+            });
+        }
     }
 }
