@@ -173,6 +173,8 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.TESTIUM_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.TESTIUM_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.TESTIUM_BOOTS.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.TESTIUM_HORSE_ARMOR.get(), ModelTemplates.FLAT_ITEM);
+
 
 
     }

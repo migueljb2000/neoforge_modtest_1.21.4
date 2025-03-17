@@ -1,5 +1,11 @@
 {
   "layers": {
+    "horse_body": [
+      {
+        "texture": "testiummod:testium/testium_armor_horse",
+        "use_player_texture": true
+      }
+    ],
     "humanoid": [
       {
         "texture": "testiummod:testium/testium_armor"

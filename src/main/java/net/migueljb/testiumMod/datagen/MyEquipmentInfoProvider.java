@@ -50,7 +50,19 @@ public class MyEquipmentInfoProvider implements DataProvider {
                                         Optional.empty(),
                                         false
                                 )
-                        )/*
+                        ) .addLayers(
+                                EquipmentClientInfo.LayerType.HORSE_BODY,
+                                // Base texture
+                                new EquipmentClientInfo.Layer(
+                                        // Points to assets/examplemod/textures/entity/equipment/copper/horse.png
+                                        ResourceLocation.fromNamespaceAndPath("testiummod", "testium/testium_armor_horse"),
+                                        Optional.empty(),
+                                        true
+                                )
+                        )
+                        .build()
+
+                /*
                         // For wolf armor
                         .addLayers(
                                 EquipmentClientInfo.LayerType.WOLF_BODY,
@@ -63,19 +75,9 @@ public class MyEquipmentInfoProvider implements DataProvider {
                                         true
                                 )
                         )*/
-                        /*
+
                         // For horse armor
-                        .addLayers(
-                                EquipmentClientInfo.LayerType.HORSE_BODY,
-                                // Base texture
-                                new EquipmentClientInfo.Layer(
-                                        // Points to assets/examplemod/textures/entity/equipment/copper/horse.png
-                                        ResourceLocation.fromNamespaceAndPath("testium", "copper/horse"),
-                                        Optional.empty(),
-                                        true
-                                )
-                        )*/
-                        .build()
+
         );
     }
 

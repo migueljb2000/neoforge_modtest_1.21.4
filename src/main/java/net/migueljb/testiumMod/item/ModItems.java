@@ -94,12 +94,12 @@ public class ModItems {
                     AnimalArmorItem.BodyType.CANINE,
                     props
             )
-    );
+    );*/
     public static final DeferredItem<AnimalArmorItem> TESTIUM_HORSE_ARMOR =
             ITEMS.registerItem("testium_horse_armor", props -> new AnimalArmorItem(TESTIUM_ARMOR_MATERIAL,
                     AnimalArmorItem.BodyType.EQUESTRIAN,
                     props));
-*/
+
 
 
 

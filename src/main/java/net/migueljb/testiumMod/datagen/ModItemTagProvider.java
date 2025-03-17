@@ -104,7 +104,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.TESTIUM_CHESTPLATE.get())
                 .add(ModItems.TESTIUM_LEGGINGS.get())
                 .add(ModItems.TESTIUM_HELMET.get())
-                .add(ModItems.TESTIUM_BOOTS.get());
+                .add(ModItems.TESTIUM_BOOTS.get())
+                .add(ModItems.TESTIUM_HORSE_ARMOR.get());
 
 
 

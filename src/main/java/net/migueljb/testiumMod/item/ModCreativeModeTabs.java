@@ -46,6 +46,8 @@ public class ModCreativeModeTabs {
                             pOutput.accept((ModItems.TESTIUM_CHESTPLATE).get());
                             pOutput.accept((ModItems.TESTIUM_LEGGINGS).get());
                             pOutput.accept((ModItems.TESTIUM_BOOTS).get());
+                            pOutput.accept((ModItems.TESTIUM_HORSE_ARMOR).get());
+
 
                         }
                     }).build());

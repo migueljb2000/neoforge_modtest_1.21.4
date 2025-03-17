@@ -1,4 +1,4 @@
-// 1.21.4	2025-03-13T11:36:46.5525812	Model Definitions - testiummod
+// 1.21.4	2025-03-17T17:37:31.2429065	Model Definitions - testiummod
 71bf8d302cc44eb3c42b9dfa4a7dd6a7841af153 assets/testiummod/blockstates/greenium_ore_block.json
 160b3bd8709560d348c28da45ea4e33e25fd15eb assets/testiummod/blockstates/redium_ore_block.json
 435cb135a455340651eca5a29b8e5988c6381d09 assets/testiummod/blockstates/tainter_block.json
@@ -62,6 +62,7 @@ c731267c6ec1be4c99f5f2441a361a8834e18cb1 assets/testiummod/items/testium_chestpl
 c4435a466ef55100bd9d211d87c1bd2b70abe2e0 assets/testiummod/items/testium_hammer.json
 b8891c58af434d02adfd3e1821f07108d1539bf0 assets/testiummod/items/testium_helmet.json
 e78246d5994523dd9ed1fec782bfbef514fd4e57 assets/testiummod/items/testium_hoe.json
+c0a39c5c5ce053e7d30bd626e06390fa6afedb1f assets/testiummod/items/testium_horse_armor.json
 75ee8521c843258a68708a44bacebb946fc8f95f assets/testiummod/items/testium_lamp.json
 1f26ba81982afe788b99c2ca3110dc9a0f5e5e6c assets/testiummod/items/testium_leggings.json
 68325a61ca601271463aedc3e628fe4998c8321e assets/testiummod/items/testium_pickaxe.json
@@ -157,6 +158,7 @@ e55ebc93b593c25462906b2cadffbf9397ad42c2 assets/testiummod/models/item/testium_c
 7351ad4dec2c2e0084dd58ca52b97d98f36b75c3 assets/testiummod/models/item/testium_hammer.json
 5052cd1242819c70e789cb861919cb39f98fecbd assets/testiummod/models/item/testium_helmet.json
 345ba6efe2fdc0d58e62d36ad8b8c91cc48ec4c9 assets/testiummod/models/item/testium_hoe.json
+d3a6c2d4a548a12f26ac96b6df2bb9eee609285f assets/testiummod/models/item/testium_horse_armor.json
 23fe77ab4d5925e5471d14b5aeeed2d119628221 assets/testiummod/models/item/testium_leggings.json
 1c5b642874ba9cf9c7647a2dcc26f557d852fb92 assets/testiummod/models/item/testium_pickaxe.json
 c0c5a532c4b846c22ae3b287f948af9c24d53fcc assets/testiummod/models/item/testium_shovel.json
